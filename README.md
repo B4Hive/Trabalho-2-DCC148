@@ -2,11 +2,11 @@
 ## Auto-Chess with Tower Defense mechanics
 My idea is making a game where the player "buys" units of 3 different types and has the option of manually controlling them in combat or auto-combat, and maybe mix up features from tower defense games.
 ## Unit types:
-| Unit Type | Range | Survivability | Damage | Extra Info |
-|:-:|:-:|:-:|:-:|:-:|
-| Soldier | Melee | High HP | Low Damage | Mobility |
-| Archer | Ranged | Low HP | High Damage | Raw Damage |
-| Mage | Medium Range | Medium HP | Medium Damage | Healing and Status Effects |
+| Unit Type | Range        | Survivability | Damage        | Extra Info                 |
+|:---------:|:------------:|:-------------:|:-------------:|:--------------------------:|
+| Soldier   | Melee        | High HP       | Low Damage    | Mobility                   |
+| Archer    | Ranged       | Low HP        | High Damage   | Raw Damage                 |
+| Mage      | Medium Range | Medium HP     | Medium Damage | Healing and Status Effects |
 ## Core Mecanics
 - The player and it's opponent each own a tower, which they have to protect
 - At the beggining of each round, the player selects which units it wants to aquire, provided they have resources to obtain them, and place them on the game board.
@@ -35,14 +35,21 @@ Pode ser completar um conjunto de fases, derrotar um conjunto de inimigos ou alg
 8. Tela de créditos contendo informações sobre o grupo e sobre eventuais fontes de assets utilizados.
 
 | # | Requirement | Plan | Execution
-:-:|:-:|:-:|:-:
-1 | Tela Inicial | Uma cena separada | NYI
-2 | Sprites animados e Tiles | OK | NYI
-3 | Animação (não sprite) | Animações dos projéteis | NYI
-4 | Colisão | OK | NYI
-5 | Áudio & HUD | Áudio vai ser chato, HUD OK | NYI
-6 | Câmera | Zoom in/out, Foco no personagem | NYI
-7 | Objetivo | OK | NYI
-8 | Créditos | OK | NYI
+|:-:|:------------------------:|:-------------------------------:|:---:|
+| 1 | Tela Inicial             | Uma cena separada               | NYI |
+| 2 | Sprites animados e Tiles | OK                              | NYI |
+| 3 | Animação (não sprite)    | Animações dos projéteis         | NYI |
+| 4 | Colisão                  | OK                              | NYI |
+| 5 | Áudio & HUD              | Áudio vai ser chato, HUD OK     | NYI |
+| 6 | Câmera                   | Zoom in/out, Foco no personagem | NYI |
+| 7 | Objetivo                 | OK                              | NYI |
+| 8 | Créditos                 | OK                              | NYI |
 
--# "OK" é porque é óbvio que eu vou usar
+-# "OK" é porque é óbvio que eu vou usar 
+
+## Credits
+- Font : CraftPix
+- Character Sprites : CraftPix
+- Music : 
+- Sound Effects :
+- TileMap :
