@@ -1,0 +1,89 @@
+[gd_scene format=3 uid="uid://jatlx4xdpcun"]
+
+[ext_resource type="Theme" uid="uid://c7fl1xhqnfovr" path="res://assets/ui/theme.tres" id="1_w8uqo"]
+[ext_resource type="Script" uid="uid://dww28xlhl8wlb" path="res://scripts/title_screen.gd" id="2_a4ium"]
+[ext_resource type="AudioStream" uid="uid://c5mlgd8ua757c" path="res://assets/temp/brackeys_platformer_assets/music/time_for_adventure.mp3" id="3_r23qo"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_yf5fn"]
+size = Vector2(1280, 720)
+
+[sub_resource type="LabelSettings" id="LabelSettings_g4v7s"]
+font_size = 128
+outline_size = 32
+outline_color = Color(0, 0, 0, 1)
+
+[node name="TitleScreen" type="Control" unique_id=2095933503]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("1_w8uqo")
+script = ExtResource("2_a4ium")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=658367259]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="Sprite2D" parent="PanelContainer" unique_id=1403021296]
+modulate = Color(0.5019608, 0, 0, 1)
+texture = SubResource("PlaceholderTexture2D_yf5fn")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=126588322]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="TitleLabel" type="Label" parent="VBoxContainer" unique_id=238316450]
+layout_mode = 2
+size_flags_vertical = 2
+text = "
+Game Title
+"
+label_settings = SubResource("LabelSettings_g4v7s")
+horizontal_alignment = 1
+
+[node name="StartButton" type="Button" parent="VBoxContainer" unique_id=1546658066]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+text = "Start"
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=950188543]
+layout_mode = 2
+size_flags_vertical = 10
+text = "Made by B4Hive"
+horizontal_alignment = 2
+
+[node name="ExitButton" type="Button" parent="." unique_id=244345749]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -56.0
+offset_bottom = 72.0
+grow_horizontal = 0
+size_flags_vertical = 0
+text = " X "
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1144097573]
+stream = ExtResource("3_r23qo")
+autoplay = true
+parameters/looping = true
+
+[connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="ExitButton" to="." method="_on_exit_button_pressed"]

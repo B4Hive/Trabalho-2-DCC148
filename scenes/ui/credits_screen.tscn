@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://dr77rdv18j1l0"]
+
+[ext_resource type="Theme" uid="uid://c7fl1xhqnfovr" path="res://assets/ui/theme.tres" id="1_8wl6p"]
+[ext_resource type="Script" uid="uid://hclnhltyey7p" path="res://scripts/credits_screen.gd" id="2_cb4i0"]
+
+[node name="CreditsScreen" type="Control" unique_id=535899030]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_8wl6p")
+script = ExtResource("2_cb4i0")
+
+[node name="Credits" type="Label" parent="." unique_id=1800176879]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=930941539]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Credits
+
+Font: CraftPix
+Character Sprites: CraftPix
+Music:
+Sound Effects
+TileMap:"
+horizontal_alignment = 1
+vertical_alignment = 1

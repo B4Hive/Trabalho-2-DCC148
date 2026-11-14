@@ -35,15 +35,15 @@ Pode ser completar um conjunto de fases, derrotar um conjunto de inimigos ou alg
 8. Tela de créditos contendo informações sobre o grupo e sobre eventuais fontes de assets utilizados.
 
 | # | Requirement | Plan | Execution
-|:-:|:------------------------:|:-------------------------------:|:---:|
-| 1 | Tela Inicial             | Uma cena separada               | NYI |
-| 2 | Sprites animados e Tiles | OK                              | NYI |
+|:-:|:------------------------:|:-------------------------------:|:-------------------------------------------------:|
+| 1 | Tela Inicial             | Uma cena separada               | Screen Implemented (missing background)           |
+| 2 | Sprites animados e Tiles | OK                              | Implemented / Missing TileMap                     |
 | 3 | Animação (não sprite)    | Animações dos projéteis         | NYI |
 | 4 | Colisão                  | OK                              | NYI |
-| 5 | Áudio & HUD              | Áudio vai ser chato, HUD OK     | NYI |
+| 5 | Áudio & HUD              | Áudio vai ser chato, HUD OK     | TitleScreen Music Configured / Missing music file |
 | 6 | Câmera                   | Zoom in/out, Foco no personagem | NYI |
 | 7 | Objetivo                 | OK                              | NYI |
-| 8 | Créditos                 | OK                              | NYI |
+| 8 | Créditos                 | OK                              | Screen Implemented |
 
 -# "OK" é porque é óbvio que eu vou usar 
 
