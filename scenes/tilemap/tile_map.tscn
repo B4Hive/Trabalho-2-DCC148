@@ -46,3 +46,5 @@ shape = SubResource("WorldBoundaryShape2D_grgpb")
 [node name="RightBoundary" type="CollisionShape2D" parent="." unique_id=1112405151]
 position = Vector2(256, 0)
 shape = SubResource("WorldBoundaryShape2D_mixw3")
+
+[node name="Characters" type="Node2D" parent="." unique_id=1784905989]

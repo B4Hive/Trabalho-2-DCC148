@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://jatlx4xdpcun"]
 
-[ext_resource type="Theme" uid="uid://c7fl1xhqnfovr" path="res://assets/ui/theme.tres" id="1_w8uqo"]
-[ext_resource type="Script" uid="uid://dww28xlhl8wlb" path="res://scripts/title_screen.gd" id="2_a4ium"]
+[ext_resource type="Theme" uid="uid://c7fl1xhqnfovr" path="res://assets/ui/ui_theme.tres" id="1_w8uqo"]
+[ext_resource type="Script" uid="uid://dww28xlhl8wlb" path="res://scenes/ui/title_screen.gd" id="2_a4ium"]
 [ext_resource type="AudioStream" uid="uid://c5mlgd8ua757c" path="res://assets/temp/brackeys_platformer_assets/music/time_for_adventure.mp3" id="3_r23qo"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_yf5fn"]
@@ -61,7 +61,7 @@ horizontal_alignment = 1
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 6
-text = "Start"
+text = " Start "
 
 [node name="Label" type="Label" parent="VBoxContainer" unique_id=950188543]
 layout_mode = 2

@@ -319,16 +319,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_3s7jg"]
-size = Vector2(16, 26)
-
-[node name="CharacterDudeSword" type="CharacterBody2D" unique_id=2098286889]
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=49923679]
-position = Vector2(6, -8)
+[node name="DudeSword" type="AnimatedSprite2D" unique_id=49923679]
 sprite_frames = SubResource("SpriteFrames_lobxv")
 animation = &"attack"
 frame_progress = 0.13410299
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=617558117]
-shape = SubResource("RectangleShape2D_3s7jg")

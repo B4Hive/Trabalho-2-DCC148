@@ -298,16 +298,6 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_rhp1k"]
-size = Vector2(16, 26)
-
-[node name="CharacterOwletRegular" type="CharacterBody2D" unique_id=1108640664]
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=430089819]
-position = Vector2(1, -3)
+[node name="OwletRegularSprite" type="AnimatedSprite2D" unique_id=430089819]
 sprite_frames = SubResource("SpriteFrames_2qhc0")
-animation = &"walk"
-frame_progress = 0.5270146
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1936875218]
-shape = SubResource("RectangleShape2D_rhp1k")
+animation = &"attack"

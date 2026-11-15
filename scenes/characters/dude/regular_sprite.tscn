@@ -1,155 +1,155 @@
-[gd_scene format=3 uid="uid://cmn670t8vaj6t"]
+[gd_scene format=3 uid="uid://dtaki6r3defx7"]
 
-[ext_resource type="Texture2D" uid="uid://wiwiop3bgoo1" path="res://assets/characters/final/dude/regular/Dude_Monster_Attack1_4.png" id="1_vwmkj"]
-[ext_resource type="Texture2D" uid="uid://b5dmuws6mfh2p" path="res://assets/characters/final/dude/regular/Dude_Monster_Death_8.png" id="2_2qhc0"]
-[ext_resource type="Texture2D" uid="uid://dceov124a2tct" path="res://assets/characters/final/dude/regular/Dude_Monster_Hurt_4.png" id="3_wj1na"]
-[ext_resource type="Texture2D" uid="uid://boa033von4d44" path="res://assets/characters/final/dude/regular/Dude_Monster_Idle_4.png" id="4_vuioc"]
-[ext_resource type="Texture2D" uid="uid://c1j5lj67y4fjj" path="res://assets/characters/final/dude/regular/Dude_Monster_Run_6.png" id="5_lg3il"]
-[ext_resource type="Texture2D" uid="uid://cpyuth3ifb4lh" path="res://assets/characters/final/dude/regular/Dude_Monster_Throw_4.png" id="6_2qhc0"]
-[ext_resource type="Texture2D" uid="uid://bdpqckowku8yy" path="res://assets/characters/final/dude/regular/Dude_Monster_Walk_6.png" id="6_u7hp6"]
+[ext_resource type="Texture2D" uid="uid://wiwiop3bgoo1" path="res://assets/characters/final/dude/regular/Dude_Monster_Attack1_4.png" id="1_84a7x"]
+[ext_resource type="Texture2D" uid="uid://b5dmuws6mfh2p" path="res://assets/characters/final/dude/regular/Dude_Monster_Death_8.png" id="2_5i3bw"]
+[ext_resource type="Texture2D" uid="uid://dceov124a2tct" path="res://assets/characters/final/dude/regular/Dude_Monster_Hurt_4.png" id="3_lbd07"]
+[ext_resource type="Texture2D" uid="uid://boa033von4d44" path="res://assets/characters/final/dude/regular/Dude_Monster_Idle_4.png" id="4_6sa2v"]
+[ext_resource type="Texture2D" uid="uid://c1j5lj67y4fjj" path="res://assets/characters/final/dude/regular/Dude_Monster_Run_6.png" id="5_jaycm"]
+[ext_resource type="Texture2D" uid="uid://cpyuth3ifb4lh" path="res://assets/characters/final/dude/regular/Dude_Monster_Throw_4.png" id="6_vdpvd"]
+[ext_resource type="Texture2D" uid="uid://bdpqckowku8yy" path="res://assets/characters/final/dude/regular/Dude_Monster_Walk_6.png" id="7_bmmad"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_h87rj"]
-atlas = ExtResource("1_vwmkj")
+atlas = ExtResource("1_84a7x")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ikhf5"]
-atlas = ExtResource("1_vwmkj")
+atlas = ExtResource("1_84a7x")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7bh02"]
-atlas = ExtResource("1_vwmkj")
+atlas = ExtResource("1_84a7x")
 region = Rect2(64, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_oe12t"]
-atlas = ExtResource("1_vwmkj")
+atlas = ExtResource("1_84a7x")
 region = Rect2(96, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_f0m05"]
-atlas = ExtResource("2_2qhc0")
+atlas = ExtResource("2_5i3bw")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jjjve"]
-atlas = ExtResource("2_2qhc0")
+atlas = ExtResource("2_5i3bw")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gwftu"]
-atlas = ExtResource("2_2qhc0")
+atlas = ExtResource("2_5i3bw")
 region = Rect2(64, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_knrlt"]
-atlas = ExtResource("2_2qhc0")
+atlas = ExtResource("2_5i3bw")
 region = Rect2(96, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mmyk8"]
-atlas = ExtResource("2_2qhc0")
+atlas = ExtResource("2_5i3bw")
 region = Rect2(128, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_iumuu"]
-atlas = ExtResource("2_2qhc0")
+atlas = ExtResource("2_5i3bw")
 region = Rect2(160, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_siu4w"]
-atlas = ExtResource("2_2qhc0")
+atlas = ExtResource("2_5i3bw")
 region = Rect2(192, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_smcgp"]
-atlas = ExtResource("2_2qhc0")
+atlas = ExtResource("2_5i3bw")
 region = Rect2(224, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_s3a2c"]
-atlas = ExtResource("3_wj1na")
+atlas = ExtResource("3_lbd07")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_av6dg"]
-atlas = ExtResource("3_wj1na")
+atlas = ExtResource("3_lbd07")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bqyj0"]
-atlas = ExtResource("3_wj1na")
+atlas = ExtResource("3_lbd07")
 region = Rect2(64, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1x6t3"]
-atlas = ExtResource("3_wj1na")
+atlas = ExtResource("3_lbd07")
 region = Rect2(96, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vsu0b"]
-atlas = ExtResource("4_vuioc")
+atlas = ExtResource("4_6sa2v")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gkrqr"]
-atlas = ExtResource("4_vuioc")
+atlas = ExtResource("4_6sa2v")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_htbr4"]
-atlas = ExtResource("4_vuioc")
+atlas = ExtResource("4_6sa2v")
 region = Rect2(64, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xxyud"]
-atlas = ExtResource("4_vuioc")
+atlas = ExtResource("4_6sa2v")
 region = Rect2(96, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uhnuj"]
-atlas = ExtResource("5_lg3il")
+atlas = ExtResource("5_jaycm")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_e5601"]
-atlas = ExtResource("5_lg3il")
+atlas = ExtResource("5_jaycm")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cnx6t"]
-atlas = ExtResource("5_lg3il")
+atlas = ExtResource("5_jaycm")
 region = Rect2(64, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_shcq4"]
-atlas = ExtResource("5_lg3il")
+atlas = ExtResource("5_jaycm")
 region = Rect2(96, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xx14h"]
-atlas = ExtResource("5_lg3il")
+atlas = ExtResource("5_jaycm")
 region = Rect2(128, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0v3ph"]
-atlas = ExtResource("5_lg3il")
+atlas = ExtResource("5_jaycm")
 region = Rect2(160, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wj1na"]
-atlas = ExtResource("6_2qhc0")
+atlas = ExtResource("6_vdpvd")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vuioc"]
-atlas = ExtResource("6_2qhc0")
+atlas = ExtResource("6_vdpvd")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lg3il"]
-atlas = ExtResource("6_2qhc0")
+atlas = ExtResource("6_vdpvd")
 region = Rect2(64, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_u7hp6"]
-atlas = ExtResource("6_2qhc0")
+atlas = ExtResource("6_vdpvd")
 region = Rect2(96, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kyh61"]
-atlas = ExtResource("6_u7hp6")
+atlas = ExtResource("7_bmmad")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_36car"]
-atlas = ExtResource("6_u7hp6")
+atlas = ExtResource("7_bmmad")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_r0i1t"]
-atlas = ExtResource("6_u7hp6")
+atlas = ExtResource("7_bmmad")
 region = Rect2(64, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_k0xvw"]
-atlas = ExtResource("6_u7hp6")
+atlas = ExtResource("7_bmmad")
 region = Rect2(96, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3eh4o"]
-atlas = ExtResource("6_u7hp6")
+atlas = ExtResource("7_bmmad")
 region = Rect2(128, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hhfe2"]
-atlas = ExtResource("6_u7hp6")
+atlas = ExtResource("7_bmmad")
 region = Rect2(160, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_3s7jg"]
@@ -298,16 +298,6 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_rhp1k"]
-size = Vector2(16, 26)
-
-[node name="CharacterDudeRegular" type="CharacterBody2D" unique_id=1108640664]
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=430089819]
-position = Vector2(1, -3)
+[node name="DudeRegularSprite" type="AnimatedSprite2D" unique_id=13835244]
 sprite_frames = SubResource("SpriteFrames_3s7jg")
-animation = &"idle"
-frame_progress = 0.6324031
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1936875218]
-shape = SubResource("RectangleShape2D_rhp1k")
+animation = &"attack"

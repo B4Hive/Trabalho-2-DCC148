@@ -1,0 +1,9 @@
+[gd_resource type="LabelSettings" format=3 uid="uid://mbhn35tnmgmw"]
+
+[ext_resource type="FontFile" uid="uid://qnd5vdicqr0t" path="res://assets/ui/Planes_ValMore.ttf" id="1_63ohk"]
+
+[resource]
+font = ExtResource("1_63ohk")
+font_size = 8
+outline_size = 2
+outline_color = Color(0, 0, 0, 1)

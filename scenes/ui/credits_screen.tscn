@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dr77rdv18j1l0"]
 
-[ext_resource type="Theme" uid="uid://c7fl1xhqnfovr" path="res://assets/ui/theme.tres" id="1_8wl6p"]
-[ext_resource type="Script" uid="uid://hclnhltyey7p" path="res://scripts/credits_screen.gd" id="2_cb4i0"]
+[ext_resource type="Theme" uid="uid://c7fl1xhqnfovr" path="res://assets/ui/ui_theme.tres" id="1_8wl6p"]
+[ext_resource type="Script" uid="uid://hclnhltyey7p" path="res://scenes/ui/credits_screen.gd" id="2_cb4i0"]
 
 [node name="CreditsScreen" type="Control" unique_id=535899030]
 layout_mode = 3
@@ -30,7 +30,7 @@ text = "Credits
 Font: CraftPix
 Character Sprites: CraftPix
 Music:
-Sound Effects
+Sound Effects:
 TileMap:"
 horizontal_alignment = 1
 vertical_alignment = 1

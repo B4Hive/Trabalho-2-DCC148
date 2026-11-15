@@ -1,155 +1,155 @@
-[gd_scene format=3 uid="uid://0ak7owrdvsir"]
+[gd_scene format=3 uid="uid://dbtu4deasun6d"]
 
-[ext_resource type="Texture2D" uid="uid://4c8qfarvdp3k" path="res://assets/characters/final/pink/regular/Pink_Monster_Attack1_4.png" id="1_t6caw"]
-[ext_resource type="Texture2D" uid="uid://dogic3l0iag4i" path="res://assets/characters/final/pink/regular/Pink_Monster_Death_8.png" id="2_f1xef"]
-[ext_resource type="Texture2D" uid="uid://cvresst443tgh" path="res://assets/characters/final/pink/regular/Pink_Monster_Hurt_4.png" id="3_s77f4"]
-[ext_resource type="Texture2D" uid="uid://b4312blnxpryq" path="res://assets/characters/final/pink/regular/Pink_Monster_Idle_4.png" id="4_mc1ka"]
-[ext_resource type="Texture2D" uid="uid://b67vltgh5gh17" path="res://assets/characters/final/pink/regular/Pink_Monster_Run_6.png" id="5_wnvfi"]
-[ext_resource type="Texture2D" uid="uid://c8nd3b37dl3ln" path="res://assets/characters/final/pink/regular/Pink_Monster_Throw_4.png" id="6_vlpka"]
-[ext_resource type="Texture2D" uid="uid://mqkdaqbulijy" path="res://assets/characters/final/pink/regular/Pink_Monster_Walk_6.png" id="7_xlguh"]
+[ext_resource type="Texture2D" uid="uid://4c8qfarvdp3k" path="res://assets/characters/final/pink/regular/Pink_Monster_Attack1_4.png" id="1_hg3ms"]
+[ext_resource type="Texture2D" uid="uid://dogic3l0iag4i" path="res://assets/characters/final/pink/regular/Pink_Monster_Death_8.png" id="2_skdup"]
+[ext_resource type="Texture2D" uid="uid://cvresst443tgh" path="res://assets/characters/final/pink/regular/Pink_Monster_Hurt_4.png" id="3_c6xm6"]
+[ext_resource type="Texture2D" uid="uid://b4312blnxpryq" path="res://assets/characters/final/pink/regular/Pink_Monster_Idle_4.png" id="4_ej770"]
+[ext_resource type="Texture2D" uid="uid://b67vltgh5gh17" path="res://assets/characters/final/pink/regular/Pink_Monster_Run_6.png" id="5_nkp58"]
+[ext_resource type="Texture2D" uid="uid://c8nd3b37dl3ln" path="res://assets/characters/final/pink/regular/Pink_Monster_Throw_4.png" id="6_hpl5a"]
+[ext_resource type="Texture2D" uid="uid://mqkdaqbulijy" path="res://assets/characters/final/pink/regular/Pink_Monster_Walk_6.png" id="7_ye5bs"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_guuye"]
-atlas = ExtResource("1_t6caw")
+atlas = ExtResource("1_hg3ms")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_chi2a"]
-atlas = ExtResource("1_t6caw")
+atlas = ExtResource("1_hg3ms")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_csbek"]
-atlas = ExtResource("1_t6caw")
+atlas = ExtResource("1_hg3ms")
 region = Rect2(64, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ko23i"]
-atlas = ExtResource("1_t6caw")
+atlas = ExtResource("1_hg3ms")
 region = Rect2(96, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1gil0"]
-atlas = ExtResource("2_f1xef")
+atlas = ExtResource("2_skdup")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_toy5w"]
-atlas = ExtResource("2_f1xef")
+atlas = ExtResource("2_skdup")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8552v"]
-atlas = ExtResource("2_f1xef")
+atlas = ExtResource("2_skdup")
 region = Rect2(64, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kinan"]
-atlas = ExtResource("2_f1xef")
+atlas = ExtResource("2_skdup")
 region = Rect2(96, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_srhop"]
-atlas = ExtResource("2_f1xef")
+atlas = ExtResource("2_skdup")
 region = Rect2(128, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rt8ko"]
-atlas = ExtResource("2_f1xef")
+atlas = ExtResource("2_skdup")
 region = Rect2(160, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_41pnb"]
-atlas = ExtResource("2_f1xef")
+atlas = ExtResource("2_skdup")
 region = Rect2(192, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ekji4"]
-atlas = ExtResource("2_f1xef")
+atlas = ExtResource("2_skdup")
 region = Rect2(224, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a50ev"]
-atlas = ExtResource("3_s77f4")
+atlas = ExtResource("3_c6xm6")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7nqde"]
-atlas = ExtResource("3_s77f4")
+atlas = ExtResource("3_c6xm6")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_se0h6"]
-atlas = ExtResource("3_s77f4")
+atlas = ExtResource("3_c6xm6")
 region = Rect2(64, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a80ar"]
-atlas = ExtResource("3_s77f4")
+atlas = ExtResource("3_c6xm6")
 region = Rect2(96, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_52pww"]
-atlas = ExtResource("4_mc1ka")
+atlas = ExtResource("4_ej770")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7cr78"]
-atlas = ExtResource("4_mc1ka")
+atlas = ExtResource("4_ej770")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fm1h1"]
-atlas = ExtResource("4_mc1ka")
+atlas = ExtResource("4_ej770")
 region = Rect2(64, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8gqdr"]
-atlas = ExtResource("4_mc1ka")
+atlas = ExtResource("4_ej770")
 region = Rect2(96, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lufpv"]
-atlas = ExtResource("5_wnvfi")
+atlas = ExtResource("5_nkp58")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_m1jpp"]
-atlas = ExtResource("5_wnvfi")
+atlas = ExtResource("5_nkp58")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mos3r"]
-atlas = ExtResource("5_wnvfi")
+atlas = ExtResource("5_nkp58")
 region = Rect2(64, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wddct"]
-atlas = ExtResource("5_wnvfi")
+atlas = ExtResource("5_nkp58")
 region = Rect2(96, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6v643"]
-atlas = ExtResource("5_wnvfi")
+atlas = ExtResource("5_nkp58")
 region = Rect2(128, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ltq0h"]
-atlas = ExtResource("5_wnvfi")
+atlas = ExtResource("5_nkp58")
 region = Rect2(160, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_140ob"]
-atlas = ExtResource("6_vlpka")
+atlas = ExtResource("6_hpl5a")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7bctb"]
-atlas = ExtResource("6_vlpka")
+atlas = ExtResource("6_hpl5a")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_h0cnv"]
-atlas = ExtResource("6_vlpka")
+atlas = ExtResource("6_hpl5a")
 region = Rect2(64, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gitcx"]
-atlas = ExtResource("6_vlpka")
+atlas = ExtResource("6_hpl5a")
 region = Rect2(96, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dtm10"]
-atlas = ExtResource("7_xlguh")
+atlas = ExtResource("7_ye5bs")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nh6j3"]
-atlas = ExtResource("7_xlguh")
+atlas = ExtResource("7_ye5bs")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_17o8r"]
-atlas = ExtResource("7_xlguh")
+atlas = ExtResource("7_ye5bs")
 region = Rect2(64, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3mx8b"]
-atlas = ExtResource("7_xlguh")
+atlas = ExtResource("7_ye5bs")
 region = Rect2(96, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4e0ud"]
-atlas = ExtResource("7_xlguh")
+atlas = ExtResource("7_ye5bs")
 region = Rect2(128, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uak7t"]
-atlas = ExtResource("7_xlguh")
+atlas = ExtResource("7_ye5bs")
 region = Rect2(160, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_3s7jg"]
@@ -298,16 +298,6 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_rhp1k"]
-size = Vector2(16, 26)
-
-[node name="CharacterPinkRegular" type="CharacterBody2D" unique_id=1108640664]
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=430089819]
-position = Vector2(1, -3)
+[node name="PinkRegularSprite" type="AnimatedSprite2D" unique_id=140007385]
 sprite_frames = SubResource("SpriteFrames_3s7jg")
-animation = &"walk"
-frame_progress = 0.3797908
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1936875218]
-shape = SubResource("RectangleShape2D_rhp1k")
+animation = &"attack"
