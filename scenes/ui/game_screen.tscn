@@ -4,11 +4,12 @@
 [ext_resource type="Script" uid="uid://rnjl5t8wqxxu" path="res://scenes/ui/game_screen.gd" id="2_gkbp4"]
 [ext_resource type="PackedScene" uid="uid://j1ougbi7o5yn" path="res://scenes/tilemap/tile_map.tscn" id="3_nwa5a"]
 [ext_resource type="Script" uid="uid://b6m0p3ogyg1te" path="res://scenes/ui/camera_2d.gd" id="4_0kkfd"]
+[ext_resource type="PackedScene" uid="uid://d0b71ig7f6uvf" path="res://scenes/characters/player.tscn" id="5_0kkfd"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g4v7s"]
 bg_color = Color(1, 1, 1, 0)
 
-[node name="GameScreen" type="Control" unique_id=276173635]
+[node name="GameScreen" type="Control" unique_id=276173635 node_paths=PackedStringArray("players")]
 layout_mode = 3
 anchors_preset = 8
 anchor_left = 0.5
@@ -25,8 +26,50 @@ size_flags_horizontal = 6
 size_flags_vertical = 6
 theme = ExtResource("1_gkbp4")
 script = ExtResource("2_gkbp4")
+players = [NodePath("Player"), NodePath("Player2")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=391304015]
+layer = 4
+
+[node name="HUD" type="Panel" parent="CanvasLayer" unique_id=1562454173]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+theme = ExtResource("1_gkbp4")
+theme_override_styles/panel = SubResource("StyleBoxFlat_g4v7s")
+
+[node name="TurnLabel" type="Label" parent="CanvasLayer/HUD" unique_id=513400843]
+layout_mode = 1
+offset_right = 174.0
+offset_bottom = 64.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+text = "Turn: "
+
+[node name="QuitButton" type="Button" parent="CanvasLayer/HUD" unique_id=1948360086]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -58.0
+offset_bottom = 31.0
+grow_horizontal = 0
+size_flags_horizontal = 8
+size_flags_vertical = 0
+text = " Quit "
 
 [node name="TileMap" parent="." unique_id=747578938 instance=ExtResource("3_nwa5a")]
+
+[node name="Player" parent="." unique_id=1022870069 instance=ExtResource("5_0kkfd")]
+position = Vector2(-240, 0)
+
+[node name="Player2" parent="." unique_id=1566627138 instance=ExtResource("5_0kkfd")]
+position = Vector2(240, 0)
+ai = true
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=2083106492]
 zoom = Vector2(4, 4)
@@ -36,32 +79,6 @@ limit_right = 320
 limit_bottom = 192
 script = ExtResource("4_0kkfd")
 
-[node name="HUD" type="Panel" parent="Camera2D" unique_id=1562454173]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -160.0
-offset_top = -90.0
-offset_right = 160.0
-offset_bottom = 90.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 8
-size_flags_vertical = 0
-theme = ExtResource("1_gkbp4")
-theme_override_styles/panel = SubResource("StyleBoxFlat_g4v7s")
-
-[node name="QuitButton" type="Button" parent="Camera2D/HUD" unique_id=1948360086]
-layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -42.0
-offset_bottom = 31.0
-grow_horizontal = 0
-size_flags_horizontal = 8
-size_flags_vertical = 0
-theme_override_font_sizes/font_size = 16
-text = " Quit "
-
-[connection signal="pressed" from="Camera2D/HUD/QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/HUD/QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="endTurnSignal" from="Player" to="." method="_on_end_turn"]
+[connection signal="endTurnSignal" from="Player2" to="." method="_on_end_turn"]
