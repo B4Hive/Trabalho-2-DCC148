@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-var sprite:Node
+var sprite:AnimatedSprite2D
 var path:String = "res://scenes/characters/"
 var file:String = "/regular_sprite.tscn"
 var facingLeft:bool
@@ -20,6 +20,7 @@ func setSprite(team:String):
 	sprite = load(path + team + file).instantiate()
 	add_child(sprite)
 	sprite.scale *= 2
+	sprite.play("idle")
 
 func flipSprite()->void:
 	if facingLeft:

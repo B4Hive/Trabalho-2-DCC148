@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-var sprite:Node
+var sprite:AnimatedSprite2D
 var path:String = "res://scenes/characters/"
 var file:String = "/sword_sprite.tscn"
 
