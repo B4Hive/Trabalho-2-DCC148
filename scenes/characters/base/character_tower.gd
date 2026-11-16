@@ -29,3 +29,9 @@ func flipSprite()->void:
 	else:
 		sprite.flip_h = true
 		facingLeft = true
+
+func gainGold(g:int)->void:
+	if g > 0: gold += g
+
+func spendGold(g:int)->void:
+	if g >= gold: gold -= g
