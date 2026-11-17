@@ -1,9 +1,5 @@
-extends CharacterBody2D
+extends CharacterBase
 
-var sprite:AnimatedSprite2D
-var path:String = "res://scenes/characters/"
-var file:String = "/sword_sprite.tscn"
-
-func setSprite(team:String):
-	sprite = load(path + team + file).instantiate()
-	add_child(sprite)
+func _ready() -> void:
+	hp = 5
+	energy = 0

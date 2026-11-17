@@ -167,7 +167,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_r5jaa")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"attack",
 "speed": 5.0
 }, {
@@ -196,7 +196,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_a1fn4")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"death",
 "speed": 5.0
 }, {
@@ -213,7 +213,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_0cyci")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"hurt",
 "speed": 5.0
 }, {
@@ -270,7 +270,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_fe41k")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"special",
 "speed": 5.0
 }, {
@@ -300,4 +300,4 @@ animations = [{
 
 [node name="OwletRegularSprite" type="AnimatedSprite2D" unique_id=430089819]
 sprite_frames = SubResource("SpriteFrames_2qhc0")
-animation = &"attack"
+animation = &"special"

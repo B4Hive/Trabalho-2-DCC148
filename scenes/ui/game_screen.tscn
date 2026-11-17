@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://j1ougbi7o5yn" path="res://scenes/tilemap/tile_map.tscn" id="3_nwa5a"]
 [ext_resource type="Script" uid="uid://b6m0p3ogyg1te" path="res://scenes/ui/camera_2d.gd" id="4_0kkfd"]
 [ext_resource type="PackedScene" uid="uid://d0b71ig7f6uvf" path="res://scenes/characters/player.tscn" id="5_0kkfd"]
+[ext_resource type="LabelSettings" uid="uid://mbhn35tnmgmw" path="res://assets/ui/character_hud.tres" id="6_nwa5a"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g4v7s"]
 bg_color = Color(1, 1, 1, 0)
@@ -115,7 +116,22 @@ limit_right = 320
 limit_bottom = 192
 script = ExtResource("4_0kkfd")
 
+[node name="Label" type="Label" parent="Camera2D" unique_id=1541339712]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "\\ /
+/ \\"
+label_settings = ExtResource("6_nwa5a")
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [connection signal="pressed" from="CanvasLayer/HUD/QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/HUD/SummonOptions/SwordButton" to="." method="_on_sword_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/HUD/SummonOptions/BowButton" to="." method="_on_bow_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/HUD/SummonOptions/MageButton" to="." method="_on_mage_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/HUD/SkipButton" to="." method="_on_skip_button_pressed"]
 [connection signal="endTurnSignal" from="Player" to="." method="_on_end_turn"]
 [connection signal="endTurnSignal" from="Player2" to="." method="_on_end_turn"]

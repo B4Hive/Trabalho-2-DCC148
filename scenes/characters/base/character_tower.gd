@@ -1,37 +1,15 @@
-extends CharacterBody2D
-
-var sprite:AnimatedSprite2D
-var path:String = "res://scenes/characters/"
-var file:String = "/regular_sprite.tscn"
-var facingLeft:bool
-
-var hp : int
-@onready var hpLabel:Label = $HUD/HP
-var gold : int
-@onready var goldLabel:Label = $HUD/Gold
+extends CharacterBase
 
 func _ready() -> void:
 	hp = 10
-	gold = 0
-	hpLabel.text = String.num_int64(hp)
-	goldLabel.text = String.num_int64(gold)
+	energy = 3
+	updateHUD()
 
-func setSprite(team:String):
-	sprite = load(path + team + file).instantiate()
+func setSprite(team:String, type:String):
+	team = team
+	type = type
+	var path:String = spritePath + team + "/" + type + spriteFile
+	sprite = load(path).instantiate()
 	add_child(sprite)
 	sprite.scale *= 2
 	sprite.play("idle")
-
-func flipSprite()->void:
-	if facingLeft:
-		sprite.flip_h = false
-		facingLeft = false
-	else:
-		sprite.flip_h = true
-		facingLeft = true
-
-func gainGold(g:int)->void:
-	if g > 0: gold += g
-
-func spendGold(g:int)->void:
-	if g >= gold: gold -= g

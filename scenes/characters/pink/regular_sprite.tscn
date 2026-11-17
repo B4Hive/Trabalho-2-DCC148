@@ -167,7 +167,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_ko23i")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"attack",
 "speed": 5.0
 }, {
@@ -196,7 +196,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_ekji4")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"death",
 "speed": 5.0
 }, {
@@ -213,7 +213,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_a80ar")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"hurt",
 "speed": 5.0
 }, {
@@ -270,7 +270,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_gitcx")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"special",
 "speed": 5.0
 }, {
@@ -300,4 +300,4 @@ animations = [{
 
 [node name="PinkRegularSprite" type="AnimatedSprite2D" unique_id=140007385]
 sprite_frames = SubResource("SpriteFrames_3s7jg")
-animation = &"attack"
+animation = &"special"

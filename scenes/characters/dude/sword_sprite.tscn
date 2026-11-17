@@ -185,7 +185,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_islf6")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"attack",
 "speed": 5.0
 }, {
@@ -214,7 +214,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_vnw4p")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"death",
 "speed": 5.0
 }, {
@@ -231,7 +231,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_ops8n")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"hurt",
 "speed": 5.0
 }, {
@@ -291,7 +291,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_lumkh")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"special",
 "speed": 5.0
 }, {
@@ -321,5 +321,4 @@ animations = [{
 
 [node name="DudeSword" type="AnimatedSprite2D" unique_id=49923679]
 sprite_frames = SubResource("SpriteFrames_lobxv")
-animation = &"attack"
-frame_progress = 0.13410299
+animation = &"walk"

@@ -189,7 +189,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_lfs8y")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"attack",
 "speed": 5.0
 }, {
@@ -218,7 +218,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_8sorc")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"death",
 "speed": 5.0
 }, {
@@ -235,7 +235,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_fm6xm")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"hurt",
 "speed": 5.0
 }, {
@@ -298,7 +298,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_6l1m8")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"special",
 "speed": 5.0
 }, {
@@ -328,5 +328,4 @@ animations = [{
 
 [node name="BowSprite" type="AnimatedSprite2D" unique_id=1006715446]
 sprite_frames = SubResource("SpriteFrames_yf5fn")
-animation = &"idle"
-frame_progress = 0.44574738
+animation = &"special"

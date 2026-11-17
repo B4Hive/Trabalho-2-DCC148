@@ -1,11 +1,13 @@
 [gd_scene format=3 uid="uid://cmn670t8vaj6t"]
 
 [ext_resource type="LabelSettings" uid="uid://mbhn35tnmgmw" path="res://assets/ui/character_hud.tres" id="1_0w7d3"]
+[ext_resource type="Script" uid="uid://b35dnt4wn7lda" path="res://scenes/characters/base/character_regular.gd" id="1_dr4p5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rhp1k"]
 size = Vector2(16, 26)
 
 [node name="CharacterRegular" type="CharacterBody2D" unique_id=1108640664]
+script = ExtResource("1_dr4p5")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1936875218]
 position = Vector2(-1, 3)
@@ -34,13 +36,6 @@ grow_horizontal = 0
 theme_override_colors/font_color = Color(1, 0, 0, 1)
 theme_override_constants/outline_size = 2
 text = "10"
-label_settings = ExtResource("1_0w7d3")
-
-[node name="Level" type="Label" parent="HUD" unique_id=1641296836]
-layout_mode = 1
-offset_right = 4.0
-offset_bottom = 8.0
-text = "*"
 label_settings = ExtResource("1_0w7d3")
 
 [node name="Energy" type="Label" parent="HUD" unique_id=1135464475]
