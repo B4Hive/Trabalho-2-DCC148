@@ -11,6 +11,10 @@ var currentPlayer:Node
 func _ready() -> void:
 	_on_end_turn()
 
+func _process(_delta: float) -> void:
+	# Keyboard Controls
+	pass
+
 func _on_quit_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/ui/title_screen.tscn")
 
@@ -24,6 +28,9 @@ func _on_end_turn() -> void:
 func _on_skip_button_pressed() -> void:
 	if $CanvasLayer/HUD/SummonOptions.is_visible_in_tree():
 		currentPlayer.summon.emit("none")
+		return
+	if $CanvasLayer/HUD/DirectionButtons.is_visible_in_tree():
+		currentPlayer.direction.emit(-1)
 		return
 	currentPlayer.endPhase.emit()
 
@@ -43,3 +50,15 @@ func _on_bow_button_pressed() -> void:
 
 func _on_mage_button_pressed() -> void:
 	currentPlayer.summon.emit("regular")
+
+func _on_left_pressed() -> void:
+	currentPlayer.direction.emit(3)
+
+func _on_up_pressed() -> void:
+	currentPlayer.direction.emit(0)
+
+func _on_down_pressed() -> void:
+	currentPlayer.direction.emit(2)
+
+func _on_right_pressed() -> void:
+	currentPlayer.direction.emit(1)

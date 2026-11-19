@@ -53,3 +53,5 @@ Pode ser completar um conjunto de fases, derrotar um conjunto de inimigos ou alg
 - Music : 
 - Sound Effects :
 - TileMap :
+
+TODO: corrigir a posição do characterHUD

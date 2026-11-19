@@ -99,6 +99,35 @@ grow_vertical = 0
 size_flags_horizontal = 10
 text = " Skip Phase "
 
+[node name="DirectionButtons" type="HBoxContainer" parent="CanvasLayer/HUD" unique_id=835768778]
+visible = false
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -136.0
+offset_right = 160.0
+grow_vertical = 0
+
+[node name="Left" type="Button" parent="CanvasLayer/HUD/DirectionButtons" unique_id=557176018]
+layout_mode = 2
+text = "<"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/HUD/DirectionButtons" unique_id=1869198935]
+layout_mode = 2
+
+[node name="Up" type="Button" parent="CanvasLayer/HUD/DirectionButtons/VBoxContainer" unique_id=1757929406]
+layout_mode = 2
+text = "^"
+
+[node name="Down" type="Button" parent="CanvasLayer/HUD/DirectionButtons/VBoxContainer" unique_id=1728013103]
+layout_mode = 2
+text = "v"
+
+[node name="Right" type="Button" parent="CanvasLayer/HUD/DirectionButtons" unique_id=1147908180]
+layout_mode = 2
+text = ">"
+
 [node name="TileMap" parent="." unique_id=747578938 instance=ExtResource("3_nwa5a")]
 
 [node name="Player" parent="." unique_id=1022870069 instance=ExtResource("5_0kkfd")]
@@ -122,8 +151,10 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "\\ /
-/ \\"
+text = "/       \\
+
+
+\\       /"
 label_settings = ExtResource("6_nwa5a")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -133,5 +164,9 @@ vertical_alignment = 1
 [connection signal="pressed" from="CanvasLayer/HUD/SummonOptions/BowButton" to="." method="_on_bow_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/HUD/SummonOptions/MageButton" to="." method="_on_mage_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/HUD/SkipButton" to="." method="_on_skip_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/HUD/DirectionButtons/Left" to="." method="_on_left_pressed"]
+[connection signal="pressed" from="CanvasLayer/HUD/DirectionButtons/VBoxContainer/Up" to="." method="_on_up_pressed"]
+[connection signal="pressed" from="CanvasLayer/HUD/DirectionButtons/VBoxContainer/Down" to="." method="_on_down_pressed"]
+[connection signal="pressed" from="CanvasLayer/HUD/DirectionButtons/Right" to="." method="_on_right_pressed"]
 [connection signal="endTurnSignal" from="Player" to="." method="_on_end_turn"]
 [connection signal="endTurnSignal" from="Player2" to="." method="_on_end_turn"]

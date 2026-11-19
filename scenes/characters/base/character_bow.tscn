@@ -1,53 +1,21 @@
 [gd_scene format=3 uid="uid://bgsrgqtjj1ay"]
 
 [ext_resource type="Script" uid="uid://qvaxgan5j7b" path="res://scenes/characters/base/character_bow.gd" id="1_70w14"]
-[ext_resource type="LabelSettings" uid="uid://mbhn35tnmgmw" path="res://assets/ui/character_hud.tres" id="2_h3omk"]
+[ext_resource type="PackedScene" uid="uid://mwjs3sgqm51j" path="res://scenes/characters/base/character_hud.tscn" id="2_h3omk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
-size = Vector2(16, 26)
+size = Vector2(28, 26)
 
 [node name="CharacterBow" type="CharacterBody2D" unique_id=1642249525]
 script = ExtResource("1_70w14")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2057703104]
-position = Vector2(-6, 8)
+position = Vector2(0, 8)
 shape = SubResource("RectangleShape2D_g4v7s")
 
-[node name="HUD" type="Control" parent="." unique_id=2095335039]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -22.0
-offset_top = -11.0
-offset_right = 10.0
+[node name="HUD" parent="." unique_id=1490076115 instance=ExtResource("2_h3omk")]
+offset_top = -21.0
+offset_right = 16.0
 offset_bottom = 21.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="HP" type="Label" parent="HUD" unique_id=673726134]
-layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -7.0
-offset_bottom = 8.0
-grow_horizontal = 0
-theme_override_colors/font_color = Color(1, 0, 0, 1)
-theme_override_constants/outline_size = 2
-text = "10"
-label_settings = ExtResource("2_h3omk")
-
-[node name="Energy" type="Label" parent="HUD" unique_id=764162596]
-layout_mode = 1
-anchors_preset = 3
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -4.0
-offset_top = -8.0
-grow_horizontal = 0
-grow_vertical = 0
-text = "0"
-label_settings = ExtResource("2_h3omk")
+size_flags_horizontal = 8
+size_flags_vertical = 0
