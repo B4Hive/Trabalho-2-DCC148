@@ -13,6 +13,8 @@ var facingLeft:bool = false
 var hp:int
 var energy:int
 var unitRange:int
+var damage:int
+var specialCost:int
 @onready var hud:Control = $HUD
 
 signal movementFinished
@@ -43,13 +45,12 @@ func _physics_process(delta: float) -> void:
 			return
 		velocity = remaining.normalized() * moveSpeed
 		move_and_slide()
-
-	if get_slide_collision_count() > 0:
-		velocity = Vector2.ZERO
-		moving = false
-		if sprite != null:
-			sprite.play("idle")
-		movementFinished.emit()
+		if get_slide_collision_count() > 0:
+			velocity = Vector2.ZERO
+			moving = false
+			if sprite != null:
+				sprite.play("idle")
+			movementFinished.emit()
 
 func updateHUD()->void: hud.update(hp, energy)
 
@@ -73,6 +74,7 @@ func healHP(amount:int)->void:
 
 func gainEnergy(e:int)->void:
 	if e > 0: energy += e
+	if energy > specialCost: energy = specialCost
 	updateHUD()
 
 func spendEnergy(e:int)->bool:
@@ -88,3 +90,7 @@ func moveTo(targetPos:Vector2)->void:
 	if sprite != null:
 		sprite.play("walk")
 	await movementFinished
+
+func attack(target:CharacterBase): #TODO
+	print(damage)
+	print(target)

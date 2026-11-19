@@ -3,7 +3,7 @@ extends CharacterBase
 func _ready() -> void:
 	hp = 6
 	energy = 6
-	unitRange = 0
+	specialCost = INT64_MAX
 	updateHUD()
 
 func setSprite(t:String, type:String):

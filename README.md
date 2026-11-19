@@ -54,4 +54,4 @@ Pode ser completar um conjunto de fases, derrotar um conjunto de inimigos ou alg
 - Sound Effects :
 - TileMap :
 
-TODO: corrigir a posição do characterHUD
+TODO: Adicionar sistema de particulas para efeitos visuais

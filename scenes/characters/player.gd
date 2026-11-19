@@ -147,6 +147,7 @@ func movePhase(unit:CharacterBody2D)->void:
 		var dir:int = await direction
 		if dir == -1: break
 		if dir >= 0 and dir < offsets.size() and isPositionFree(offsets[dir]):
+			directionButtons.hide()
 			await unit.moveTo(offsets[dir])
 	directionButtons.hide()
 
@@ -166,8 +167,9 @@ func attackPhase(unit:CharacterBody2D)->void:
 				var targetPos = unit.global_position + offsets[dir] * d
 				var target = getBodyAt(targetPos)
 				if not target == null:
-					print("Target")
-					if target.team != self.team: print("Attack")
+					if target.team != self.team:
+						directionButtons.hide()
+						unit.attack(target)
 	directionButtons.hide()
 
 func gainEnergy(g:int)->void: tower.gainEnergy(g)
