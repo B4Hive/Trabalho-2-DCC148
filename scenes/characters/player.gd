@@ -40,13 +40,13 @@ func play()->void:
 	endTurn()
 
 func playerTurn()->void:
-	get_parent().setSkipButtonLabel(" End Summon ")
+	get_parent().setSkipButtonLabel(" Skip Summon ")
 	await summonPhase()
 	for unit in units:
 		camera.setTarget(unit)
-		get_parent().setSkipButtonLabel(" End Move ")
+		get_parent().setSkipButtonLabel(" Skip Move ")
 		await movePhase(unit)
-		get_parent().setSkipButtonLabel(" End Attack ")
+		get_parent().setSkipButtonLabel(" Skip Attack ")
 		await attackPhase(unit)
 	get_parent().setSkipButtonLabel(" End Turn ")
 
@@ -71,7 +71,7 @@ func summonPhase()->void:
 		if type == "none":
 			break
 		summonOptions.hide()
-		await summonUnit(type)
+		await summonUnit(type, offsets)
 		if tower.energy > 0 and amountOfFreeSlots(tower, offsets) > 0:
 			summonOptions.show()
 	summonOptions.hide()
@@ -105,19 +105,13 @@ func getBodyAt(pos: Vector2) -> CharacterBody2D:
 			return collider
 	return null
 
-func summonUnit(type: String) -> void:
+func summonUnit(type:String, offsets:Array[Vector2]) -> void:
 	var cost: int = 0
 	if type == "sword": cost = 1
 	elif type == "bow": cost = 2
 	elif type == "regular": cost = 3
 	if cost > 0 and tower.energy >= cost:
 		tower.spendEnergy(cost)
-		var offsets: Array[Vector2] = [
-			Vector2(64, 0), # Direita
-			Vector2(0, -64), # Cima
-			Vector2(0, 64) # Baixo
-		]
-		if tower.facingLeft: offsets[0] *= -1
 		for offset in offsets:
 			var pos = tower.global_position + offset
 			if isPositionFree(pos):
@@ -149,6 +143,7 @@ func movePhase(unit:CharacterBody2D)->void:
 		if dir >= 0 and dir < offsets.size() and isPositionFree(offsets[dir]):
 			directionButtons.hide()
 			await unit.moveTo(offsets[dir])
+			break
 	directionButtons.hide()
 
 func attackPhase(unit:CharacterBody2D)->void:

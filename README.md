@@ -2,11 +2,11 @@
 ## Auto-Chess with Tower Defense mechanics
 My idea is making a game where the player "buys" units of 3 different types and has the option of manually controlling them in combat or auto-combat, and maybe mix up features from tower defense games.
 ## Unit types:
-| Unit Type | Range        | Survivability | Damage        | Extra Info                 |
-|:---------:|:------------:|:-------------:|:-------------:|:--------------------------:|
-| Soldier   | Melee        | High HP       | Low Damage    | Mobility                   |
-| Archer    | Ranged       | Low HP        | High Damage   | Raw Damage                 |
-| Mage      | Medium Range | Medium HP     | Medium Damage | Healing and Status Effects |
+| Unit Type | Range        | Survivability | Damage        | Extra Info   |
+|:---------:|:------------:|:-------------:|:-------------:|:------------:|
+| Soldier   | Melee        | High HP       | Low Damage    | Self-Healing |
+| Archer    | Ranged       | Low HP        | Medium Damage | Raw Damage   |
+| Mage      | Medium Range | Medium HP     | High Damage   | High Cost    |
 ## Core Mecanics
 - The player and it's opponent each own a tower, which they have to protect
 - At the beggining of each round, the player selects which units it wants to aquire, provided they have resources to obtain them, and place them on the game board.
@@ -34,16 +34,16 @@ A câmera não deve ser estática, mas o deslocamento da câmera pode ser contí
 Pode ser completar um conjunto de fases, derrotar um conjunto de inimigos ou algum outro objetivo que dê sentido ao jogo;
 8. Tela de créditos contendo informações sobre o grupo e sobre eventuais fontes de assets utilizados.
 
-| # | Requirement | Plan | Execution
-|:-:|:------------------------:|:-------------------------------:|:-------------------------------------------------:|
-| 1 | Tela Inicial             | Uma cena separada               | Screen Implemented (missing background)           |
-| 2 | Sprites animados e Tiles | OK                              | Implemented / Missing TileMap                     |
-| 3 | Animação (não sprite)    | Animações dos projéteis         | NYI |
-| 4 | Colisão                  | OK                              | NYI |
-| 5 | Áudio & HUD              | Áudio vai ser chato, HUD OK     | TitleScreen Music Configured / Missing music file |
-| 6 | Câmera                   | Zoom in/out, Foco no personagem | NYI |
-| 7 | Objetivo                 | OK                              | NYI |
-| 8 | Créditos                 | OK                              | Screen Implemented |
+| # | Requirement | Plan |
+|:-:|:------------------------:|:-----------------------------------:|
+| 1 | Tela Inicial             | Needs fixing on positioning         |
+| 2 | Sprites animados e Tiles | Done                                |
+| 3 | Animação (não sprite)    | lerp on camera, projectiles missing |
+| 4 | Colisão                  | Done                                |
+| 5 | Áudio & HUD              | Missing some                        |
+| 6 | Câmera                   | Done                                |
+| 7 | Objetivo                 | In Progress                         |
+| 8 | Créditos                 | In Progress                         |
 
 -# "OK" é porque é óbvio que eu vou usar 
 

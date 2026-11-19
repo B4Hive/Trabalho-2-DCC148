@@ -2,7 +2,7 @@ extends CharacterBase
 
 func _ready() -> void:
 	hp = 6
-	energy = 6
+	energy = 3
 	specialCost = INT64_MAX
 	updateHUD()
 
@@ -13,7 +13,7 @@ func setSprite(t:String, type:String):
 	add_child(sprite)
 	sprite.scale *= 2
 
-func takeDamage(dmg:int)->void:
-	@warning_ignore("integer_division")
-	hp -= dmg/dmg
+func takeDamage(_dmg:int)->void:
+	particle.play("damage")
+	hp -= 1
 	updateHUD()

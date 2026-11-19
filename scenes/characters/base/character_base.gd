@@ -9,6 +9,7 @@ var team:String
 
 var facingLeft:bool = false
 @onready var collisionBox:CollisionShape2D = $CollisionShape2D
+@onready var particle:Node2D = $HUD/ParticleSystem
 
 var hp:int
 var energy:int
@@ -18,7 +19,7 @@ var specialCost:int
 @onready var hud:Control = $HUD
 
 signal movementFinished
-var moveSpeed:float = 16
+var moveSpeed:float = 24
 var moveTarget:Vector2
 var moving:bool = false
 
@@ -65,21 +66,26 @@ func flipSprite()->void:
 		collisionBox.position.x *= -1
 
 func takeDamage(dmg:int)->void:
+	particle.play("damage")
 	hp -= dmg
 	updateHUD()
 
 func healHP(amount:int)->void:
+	particle.play("healing")
 	if hp + amount <= 6: hp += amount
 	updateHUD()
 
 func gainEnergy(e:int)->void:
 	if e > 0: energy += e
-	if energy > specialCost: energy = specialCost
+	if energy >= specialCost:
+		energy = specialCost
+		particle.play("special")
 	updateHUD()
 
 func spendEnergy(e:int)->bool:
 	if energy >= e and e > 0:
 		energy -= e
+		particle.stop()
 		updateHUD()
 		return true
 	return false

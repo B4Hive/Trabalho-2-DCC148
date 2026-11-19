@@ -5,5 +5,5 @@ func _ready() -> void:
 	energy = 0
 	unitRange = 3
 	damage = 2
-	specialCost = 3
+	specialCost = 2
 	updateHUD()
