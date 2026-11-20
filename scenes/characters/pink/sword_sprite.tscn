@@ -327,5 +327,6 @@ animations = [{
 }]
 
 [node name="PinkSwordSprite" type="AnimatedSprite2D" unique_id=1224048489]
+position = Vector2(5, -5)
 sprite_frames = SubResource("SpriteFrames_g4v7s")
-animation = &"special"
+animation = &"idle"

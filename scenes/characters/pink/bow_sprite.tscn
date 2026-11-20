@@ -327,5 +327,6 @@ animations = [{
 }]
 
 [node name="BowSprite" type="AnimatedSprite2D" unique_id=395634913]
+position = Vector2(5, -5)
 sprite_frames = SubResource("SpriteFrames_57qmd")
-animation = &"special"
+animation = &"idle"

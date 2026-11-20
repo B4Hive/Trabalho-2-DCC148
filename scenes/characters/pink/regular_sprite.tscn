@@ -299,6 +299,5 @@ animations = [{
 }]
 
 [node name="PinkRegularSprite" type="AnimatedSprite2D" unique_id=140007385]
-position = Vector2(-5, 5)
 sprite_frames = SubResource("SpriteFrames_3s7jg")
 animation = &"idle"

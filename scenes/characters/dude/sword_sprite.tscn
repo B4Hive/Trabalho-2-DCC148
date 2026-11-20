@@ -320,5 +320,6 @@ animations = [{
 }]
 
 [node name="DudeSword" type="AnimatedSprite2D" unique_id=49923679]
+position = Vector2(5, -5)
 sprite_frames = SubResource("SpriteFrames_lobxv")
-animation = &"walk"
+animation = &"idle"

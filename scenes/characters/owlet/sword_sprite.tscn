@@ -327,5 +327,6 @@ animations = [{
 }]
 
 [node name="OwletSwordSprite" type="AnimatedSprite2D" unique_id=1666088546]
+position = Vector2(5, -5)
 sprite_frames = SubResource("SpriteFrames_yf5fn")
-animation = &"special"
+animation = &"idle"

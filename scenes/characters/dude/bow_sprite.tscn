@@ -327,5 +327,6 @@ animations = [{
 }]
 
 [node name="BowSprite" type="AnimatedSprite2D" unique_id=470309856]
+position = Vector2(5, -5)
 sprite_frames = SubResource("SpriteFrames_g4v7s")
-animation = &"walk"
+animation = &"idle"
