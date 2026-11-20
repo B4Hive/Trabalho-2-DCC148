@@ -13,6 +13,7 @@ script = ExtResource("1_dr4p5")
 shape = SubResource("RectangleShape2D_rhp1k")
 
 [node name="HUD" parent="." unique_id=1490076115 instance=ExtResource("2_dr4p5")]
+offset_top = -16.0
 offset_right = 16.0
 offset_bottom = 16.0
 size_flags_horizontal = 8

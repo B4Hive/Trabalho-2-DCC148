@@ -20,7 +20,7 @@ var specialCost:int
 @onready var hud:HUD = $HUD
 
 signal movementFinished
-var moveSpeed:float = 24
+var moveSpeed:float = 32
 var moveTarget:Vector2
 var moving:bool = false
 
@@ -81,12 +81,12 @@ func takeDamage(dmg:int)->void:
 func die()->void:
 	sprite.play("death")
 	await sprite.animation_finished
-	#queue_free() precisa vir do player
 	player.removeUnit(self)
 
 func healHP(amount:int)->void:
 	particle.play("healing")
 	if hp + amount <= 6: hp += amount
+	else: hp = 6
 	updateHUD()
 
 func gainEnergy(e:int)->void:
@@ -109,18 +109,20 @@ func moveTo(targetPos:Vector2)->void:
 	moving = true
 	if sprite != null:
 		sprite.play("walk")
+		# Flip depending on direction
 	await movementFinished
 
 func attack(target:CharacterBase):
-	var dmg = damage
+	var dmg = 1
 	if spendEnergy(specialCost):
-		@warning_ignore("integer_division")
-		damage += (damage * energy / specialCost)
+		dmg = special()
 		sprite.play("special")
 		await sprite.animation_finished
 	else:
-		spendEnergy(energy)
 		sprite.play("attack")
 		await sprite.animation_finished
 	player.camera.setTarget(target)
 	await target.takeDamage(dmg)
+
+func special()->int:
+	return damage

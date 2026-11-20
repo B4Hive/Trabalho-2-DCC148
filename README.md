@@ -45,13 +45,16 @@ Pode ser completar um conjunto de fases, derrotar um conjunto de inimigos ou alg
 | 7 | Objetivo                 | In Progress                         |
 | 8 | Créditos                 | In Progress                         |
 
--# "OK" é porque é óbvio que eu vou usar 
-
 ## Credits
 - Font : CraftPix
 - Character Sprites : CraftPix
+- UI Sprites: Snoblin
 - Music : 
 - Sound Effects :
-- TileMap :
+- TileMap : PixelPlains
 
-TODO: Adicionar sistema de particulas para efeitos visuais
+# TODO:
+- Bow HUD is lower than should be
+- Mage Sprite is lower than shoud be
+- Missing projectiles
+- Balancing

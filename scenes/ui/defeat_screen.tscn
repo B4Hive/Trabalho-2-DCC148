@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://cr50vgfo4bl0i"]
+
+[ext_resource type="Theme" uid="uid://c7fl1xhqnfovr" path="res://assets/ui/ui_theme.tres" id="1_vyvod"]
+[ext_resource type="Script" uid="uid://b1vfdceb7j35i" path="res://scenes/ui/defeat_screen.gd" id="2_8xv38"]
+
+[sub_resource type="Gradient" id="Gradient_lcvyk"]
+offsets = PackedFloat32Array(0, 0.7)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+metadata/_snap_enabled = true
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_a4ium"]
+gradient = SubResource("Gradient_lcvyk")
+width = 1280
+height = 1280
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(1, 1)
+
+[node name="DefeatScreen" type="Control" unique_id=1087356294]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_vyvod")
+script = ExtResource("2_8xv38")
+
+[node name="Panel" type="Panel" parent="." unique_id=1991863803]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="Panel" unique_id=1175689998]
+modulate = Color(1, 0, 0, 1)
+texture = SubResource("GradientTexture2D_a4ium")
+
+[node name="Label" type="Label" parent="." unique_id=214121479]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 16
+theme_override_font_sizes/font_size = 128
+text = "Defeat"
+horizontal_alignment = 1

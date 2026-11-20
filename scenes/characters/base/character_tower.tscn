@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://mwjs3sgqm51j" path="res://scenes/characters/base/character_hud.tscn" id="1_lccni"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
-size = Vector2(62, 62)
+size = Vector2(62, 94)
 
 [node name="CharacterTower" type="CharacterBody2D" unique_id=1577901029]
 script = ExtResource("1_24334")
@@ -14,6 +14,6 @@ shape = SubResource("RectangleShape2D_g4v7s")
 
 [node name="HUD" parent="." unique_id=1392090804 instance=ExtResource("1_lccni")]
 offset_left = -32.0
-offset_top = -36.0
+offset_top = -32.0
 offset_right = 32.0
 offset_bottom = 32.0
