@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://xb6jqcuqfa2r" path="res://assets/temp/Heart Silver/full.png" id="6_i7yn4"]
 [ext_resource type="Texture2D" uid="uid://cmbnqctaoj1ew" path="res://assets/temp/Heart Golden/half.png" id="7_nh5ju"]
 [ext_resource type="Texture2D" uid="uid://srbmmgnbq814" path="res://assets/temp/Heart Golden/full.png" id="8_s3kwy"]
+[ext_resource type="PackedScene" uid="uid://b2jd2rxavj81t" path="res://scenes/particle_system.tscn" id="10_a7vbr"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_nv4es"]
 size = Vector2(16, 16)
@@ -37,6 +38,7 @@ size_flags_horizontal = 0
 size_flags_vertical = 0
 text = "x"
 label_settings = ExtResource("1_u3bv0")
+horizontal_alignment = 1
 
 [node name="Control" type="Control" parent="." unique_id=69591298]
 layout_mode = 1
@@ -50,3 +52,6 @@ grow_horizontal = 0
 [node name="HP" type="Sprite2D" parent="Control" unique_id=1362373969]
 position = Vector2(8, 8)
 texture = SubResource("PlaceholderTexture2D_nv4es")
+
+[node name="ParticleSystem" parent="." unique_id=68652870 instance=ExtResource("10_a7vbr")]
+position = Vector2(16, 32)

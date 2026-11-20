@@ -4,16 +4,14 @@
 [ext_resource type="PackedScene" uid="uid://mwjs3sgqm51j" path="res://scenes/characters/base/character_hud.tscn" id="2_fm218"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
-size = Vector2(28, 26)
+size = Vector2(30, 30)
 
 [node name="CharacterSword" type="CharacterBody2D" unique_id=2106767269]
 script = ExtResource("1_im7kv")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=313757016]
-position = Vector2(0, 8)
 shape = SubResource("RectangleShape2D_g4v7s")
 
 [node name="HUD" parent="." unique_id=1392090804 instance=ExtResource("2_fm218")]
-offset_top = -21.0
 offset_right = 16.0
-offset_bottom = 21.0
+offset_bottom = 16.0

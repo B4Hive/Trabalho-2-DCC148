@@ -4,13 +4,12 @@
 [ext_resource type="PackedScene" uid="uid://mwjs3sgqm51j" path="res://scenes/characters/base/character_hud.tscn" id="2_h3omk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
-size = Vector2(28, 26)
+size = Vector2(30, 30)
 
 [node name="CharacterBow" type="CharacterBody2D" unique_id=1642249525]
 script = ExtResource("1_70w14")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2057703104]
-position = Vector2(0, 8)
 shape = SubResource("RectangleShape2D_g4v7s")
 
 [node name="HUD" parent="." unique_id=1490076115 instance=ExtResource("2_h3omk")]

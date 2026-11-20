@@ -1,3 +1,4 @@
+class_name HUD
 extends Control
 
 @export var sprites:Array[Texture2D]

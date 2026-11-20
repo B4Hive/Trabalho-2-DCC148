@@ -1,14 +1,15 @@
 [gd_scene format=3 uid="uid://3nc263wrndg0"]
 
+[ext_resource type="Script" uid="uid://cc85wl5tn1vqy" path="res://scenes/characters/base/character_tower.gd" id="1_24334"]
 [ext_resource type="PackedScene" uid="uid://mwjs3sgqm51j" path="res://scenes/characters/base/character_hud.tscn" id="1_lccni"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
-size = Vector2(64, 52)
+size = Vector2(62, 62)
 
 [node name="CharacterTower" type="CharacterBody2D" unique_id=1577901029]
+script = ExtResource("1_24334")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=995904513]
-position = Vector2(0, 6)
 shape = SubResource("RectangleShape2D_g4v7s")
 
 [node name="HUD" parent="." unique_id=1392090804 instance=ExtResource("1_lccni")]

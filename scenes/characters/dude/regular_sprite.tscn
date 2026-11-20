@@ -300,4 +300,4 @@ animations = [{
 
 [node name="DudeRegularSprite" type="AnimatedSprite2D" unique_id=13835244]
 sprite_frames = SubResource("SpriteFrames_3s7jg")
-animation = &"special"
+animation = &"idle"

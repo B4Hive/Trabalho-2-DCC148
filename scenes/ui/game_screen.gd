@@ -32,7 +32,6 @@ func _on_skip_button_pressed() -> void:
 	if $CanvasLayer/HUD/DirectionButtons.is_visible_in_tree():
 		currentPlayer.direction.emit(-1)
 		return
-	currentPlayer.endPhase.emit()
 
 func setSkipButtonLabel(text:String)->void:
 	skipButton.text = text

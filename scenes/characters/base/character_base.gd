@@ -6,6 +6,7 @@ var spritePath:String = "res://scenes/characters/"
 var spriteFile:String = "_sprite.tscn"
 
 var team:String
+var player:Node2D
 
 var facingLeft:bool = false
 @onready var collisionBox:CollisionShape2D = $CollisionShape2D
@@ -16,7 +17,7 @@ var energy:int
 var unitRange:int
 var damage:int
 var specialCost:int
-@onready var hud:Control = $HUD
+@onready var hud:HUD = $HUD
 
 signal movementFinished
 var moveSpeed:float = 24
@@ -27,11 +28,13 @@ func _process(_delta: float) -> void:
 	if sprite != null and not sprite.is_playing():
 		sprite.play("idle")
 
-func setSprite(t:String, type:String):
-	team = t
-	var path:String = spritePath + team + "/" + type + spriteFile
+func setSprite(unitTeam:String, spriteType:String, unitPlayer:Node2D):
+	team = unitTeam
+	var path:String = spritePath + team + "/" + spriteType + spriteFile
 	sprite = load(path).instantiate()
 	add_child(sprite)
+	move_child(sprite, 1)
+	player = unitPlayer
 
 func _physics_process(delta: float) -> void:
 	if moving:
@@ -53,7 +56,8 @@ func _physics_process(delta: float) -> void:
 				sprite.play("idle")
 			movementFinished.emit()
 
-func updateHUD()->void: hud.update(hp, energy)
+@warning_ignore("integer_division")
+func updateHUD()->void: hud.update(hp, (energy*100/specialCost))
 
 func flipSprite()->void:
 	if facingLeft:
@@ -67,8 +71,18 @@ func flipSprite()->void:
 
 func takeDamage(dmg:int)->void:
 	particle.play("damage")
+	sprite.play("hurt")
+	await sprite.animation_finished
 	hp -= dmg
 	updateHUD()
+	if hp <= 0:
+		await die()
+
+func die()->void:
+	sprite.play("death")
+	await sprite.animation_finished
+	#queue_free() precisa vir do player
+	player.removeUnit(self)
 
 func healHP(amount:int)->void:
 	particle.play("healing")
@@ -97,6 +111,16 @@ func moveTo(targetPos:Vector2)->void:
 		sprite.play("walk")
 	await movementFinished
 
-func attack(target:CharacterBase): #TODO
-	print(damage)
-	print(target)
+func attack(target:CharacterBase):
+	var dmg = damage
+	if spendEnergy(specialCost):
+		@warning_ignore("integer_division")
+		damage += (damage * energy / specialCost)
+		sprite.play("special")
+		await sprite.animation_finished
+	else:
+		spendEnergy(energy)
+		sprite.play("attack")
+		await sprite.animation_finished
+	player.camera.setTarget(target)
+	await target.takeDamage(dmg)
