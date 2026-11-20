@@ -11,6 +11,10 @@ var player:Node2D
 var facingLeft:bool = false
 @onready var collisionBox:CollisionShape2D = $CollisionShape2D
 @onready var particle:Node2D = $HUD/ParticleSystem
+@onready var hurtAudio:AudioStreamPlayer = $HUD/AudioManager/Hurt
+@onready var specialAudio:AudioStreamPlayer = $HUD/AudioManager/Special
+@onready var attackAudio:AudioStreamPlayer = $HUD/AudioManager/Attack
+@onready var deathAudio:AudioStreamPlayer = $HUD/AudioManager/Death
 
 var hp:int
 var energy:int
@@ -72,6 +76,7 @@ func flipSprite()->void:
 func takeDamage(dmg:int)->void:
 	particle.play("damage")
 	sprite.play("hurt")
+	hurtAudio.play()
 	await sprite.animation_finished
 	hp -= dmg
 	updateHUD()
@@ -80,6 +85,7 @@ func takeDamage(dmg:int)->void:
 
 func die()->void:
 	sprite.play("death")
+	deathAudio.play()
 	await sprite.animation_finished
 	player.removeUnit(self)
 
@@ -117,9 +123,11 @@ func attack(target:CharacterBase):
 	if spendEnergy(specialCost):
 		dmg = special()
 		sprite.play("special")
+		specialAudio.play()
 		await sprite.animation_finished
 	else:
 		sprite.play("attack")
+		attackAudio.play()
 		await sprite.animation_finished
 	player.camera.setTarget(target)
 	await target.takeDamage(dmg)

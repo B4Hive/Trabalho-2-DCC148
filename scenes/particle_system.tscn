@@ -19,6 +19,7 @@ metadata/_snap_enabled = true
 script = ExtResource("1_7st40")
 
 [node name="Damage" type="CPUParticles2D" parent="." unique_id=1258964128]
+visible = false
 emitting = false
 amount = 16
 texture = SubResource("GradientTexture2D_7st40")
@@ -33,6 +34,7 @@ initial_velocity_max = 32.0
 color = Color(1, 0, 0, 1)
 
 [node name="Healing" type="CPUParticles2D" parent="." unique_id=1422063890]
+visible = false
 emitting = false
 amount = 16
 texture = SubResource("GradientTexture2D_7st40")
@@ -49,6 +51,7 @@ initial_velocity_max = 8.0
 color = Color(0, 1, 0, 1)
 
 [node name="Special" type="CPUParticles2D" parent="." unique_id=424933385]
+visible = false
 amount = 16
 texture = SubResource("GradientTexture2D_7st40")
 randomness = 1.0

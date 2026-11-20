@@ -2,7 +2,7 @@
 
 [ext_resource type="Theme" uid="uid://c7fl1xhqnfovr" path="res://assets/ui/ui_theme.tres" id="1_w8uqo"]
 [ext_resource type="Script" uid="uid://dww28xlhl8wlb" path="res://scenes/ui/title_screen.gd" id="2_a4ium"]
-[ext_resource type="AudioStream" uid="uid://c5mlgd8ua757c" path="res://assets/temp/brackeys_platformer_assets/music/time_for_adventure.mp3" id="3_r23qo"]
+[ext_resource type="PackedScene" uid="uid://ipu34jtpjk7b" path="res://scenes/audio_manager.tscn" id="3_w8uqo"]
 
 [sub_resource type="Gradient" id="Gradient_w8uqo"]
 
@@ -85,10 +85,7 @@ grow_horizontal = 0
 size_flags_vertical = 0
 text = " X "
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1144097573]
-stream = ExtResource("3_r23qo")
-autoplay = true
-parameters/looping = true
+[node name="AudioStreamPlayer" parent="." unique_id=708748506 instance=ExtResource("3_w8uqo")]
 
 [connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="ExitButton" to="." method="_on_exit_button_pressed"]

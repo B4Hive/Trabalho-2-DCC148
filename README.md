@@ -54,7 +54,7 @@ Pode ser completar um conjunto de fases, derrotar um conjunto de inimigos ou alg
 - TileMap : PixelPlains
 
 # TODO:
-- Bow HUD is lower than should be
-- Mage Sprite is lower than shoud be
 - Missing projectiles
-- Balancing
+- Missing sound effects and more music
+- Missing proper credits
+- Missing help

@@ -10,7 +10,7 @@ var summonCosts:Array[int] = [3, 6, 9]
 @onready var summonOptions:VBoxContainer = $"../CanvasLayer/HUD/SummonOptions"
 @onready var skipButton:Button = $"../CanvasLayer/HUD/SkipButton"
 @onready var directionButtons:HBoxContainer = $"../CanvasLayer/HUD/DirectionButtons"
-@onready var tower:CharacterBody2D = $CharacterTower
+@onready var tower:CharacterBase = $CharacterTower
 @onready var tilemap:TileMapLayer = $"../TileMap/TileMapLayer"
 
 var characterPath:String = "res://scenes/characters/base/character_"
@@ -133,6 +133,7 @@ func getSummonCost(type:String)->int:
 
 func createUnit(type:String, pos:Vector2)->void:
 	tower.sprite.play("special")
+	tower.specialAudio.play()
 	await tower.sprite.animation_finished
 	var unit:CharacterBody2D = load(characterPath + type + sceneFileType).instantiate()
 	add_child(unit)
@@ -158,7 +159,7 @@ func movePhase(unit:CharacterBase)->void:
 				var target:CharacterBody2D = getBodyAt(unit.global_position + offsets[dir] * distance)
 				if target is CharacterBase and target.team != team:
 					directionButtons.hide()
-					camera.setTaget(target)
+					camera.setTarget(target)
 					await unit.attack(target)
 					return
 			var destination:Vector2 = snapToTileGrid(unit.global_position + offsets[dir])

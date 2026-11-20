@@ -2,10 +2,8 @@
 
 [ext_resource type="Script" uid="uid://dyncpuu4rhe3e" path="res://scenes/characters/player.gd" id="1_f8dhs"]
 [ext_resource type="PackedScene" uid="uid://3nc263wrndg0" path="res://scenes/characters/base/character_tower.tscn" id="2_sj0ne"]
-[ext_resource type="Script" uid="uid://cc85wl5tn1vqy" path="res://scenes/characters/base/character_tower.gd" id="3_6aeoy"]
 
 [node name="Player" type="Node2D" unique_id=1022870069]
 script = ExtResource("1_f8dhs")
 
 [node name="CharacterTower" parent="." unique_id=1577901029 instance=ExtResource("2_sj0ne")]
-script = ExtResource("3_6aeoy")

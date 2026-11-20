@@ -1,5 +1,8 @@
 extends Control
 
+func _ready() -> void:
+	$AudioStreamPlayer/Title.play()
+
 func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("ui_cancel"):
 		_on_exit_button_pressed()

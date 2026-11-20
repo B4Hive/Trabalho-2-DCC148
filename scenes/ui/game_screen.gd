@@ -12,6 +12,7 @@ var turn:int = 0
 var currentPlayer:Node
 
 func _ready() -> void:
+	$AudioManager/Battle.play()
 	_on_end_turn()
 
 func _process(_delta: float) -> void:

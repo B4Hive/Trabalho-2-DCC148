@@ -10,11 +10,13 @@
 [ext_resource type="Texture2D" uid="uid://cmbnqctaoj1ew" path="res://assets/temp/Heart Golden/half.png" id="7_nh5ju"]
 [ext_resource type="Texture2D" uid="uid://srbmmgnbq814" path="res://assets/temp/Heart Golden/full.png" id="8_s3kwy"]
 [ext_resource type="PackedScene" uid="uid://b2jd2rxavj81t" path="res://scenes/particle_system.tscn" id="10_a7vbr"]
+[ext_resource type="PackedScene" uid="uid://ipu34jtpjk7b" path="res://scenes/audio_manager.tscn" id="11_x85my"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_nv4es"]
 size = Vector2(16, 16)
 
 [node name="HUD" type="Control" unique_id=1392090804]
+z_index = 1
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -55,3 +57,5 @@ texture = SubResource("PlaceholderTexture2D_nv4es")
 
 [node name="ParticleSystem" parent="." unique_id=68652870 instance=ExtResource("10_a7vbr")]
 position = Vector2(16, 32)
+
+[node name="AudioManager" parent="." unique_id=1326667025 instance=ExtResource("11_x85my")]
