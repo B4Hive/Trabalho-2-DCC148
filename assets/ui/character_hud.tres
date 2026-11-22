@@ -3,7 +3,6 @@
 [ext_resource type="FontFile" uid="uid://b06l4wwfvbk78" path="res://assets/ui/fonts/PixelOperator8.ttf" id="1_63ohk"]
 
 [resource]
-line_spacing = 0.0
 font = ExtResource("1_63ohk")
 font_size = 10
 outline_size = 4

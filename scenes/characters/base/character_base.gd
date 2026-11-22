@@ -66,10 +66,12 @@ func updateHUD()->void: hud.update(hp, (energy*100/specialCost))
 func flipSprite()->void:
 	if facingLeft:
 		sprite.flip_h = false
+		sprite.position.x *= -1
 		facingLeft = false
 		collisionBox.position.x *= -1
 	else:
 		sprite.flip_h = true
+		sprite.position.x *= -1
 		facingLeft = true
 		collisionBox.position.x *= -1
 

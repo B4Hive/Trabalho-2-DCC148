@@ -13,7 +13,7 @@ height = 1280
 fill = 2
 
 [sub_resource type="LabelSettings" id="LabelSettings_g4v7s"]
-font_size = 128
+font_size = 64
 outline_size = 32
 outline_color = Color(0, 0, 0, 1)
 
@@ -57,7 +57,8 @@ alignment = 1
 layout_mode = 2
 size_flags_vertical = 2
 text = "
-Game Title
+Turn-Based
+Tower-Defense(ish)
 "
 label_settings = SubResource("LabelSettings_g4v7s")
 horizontal_alignment = 1

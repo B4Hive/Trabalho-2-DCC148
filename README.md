@@ -1,69 +1,118 @@
 # Trabalho-2-DCC148
-## Auto-Chess with Tower Defense mechanics
-My idea is making a game where the player "buys" units of 3 different types and has the option of manually controlling them in combat or auto-combat, and maybe mix up features from tower defense games.
-## Unit types:
-| Unit Type | Range        | Survivability | Damage        | Extra Info   |
-|:---------:|:------------:|:-------------:|:-------------:|:------------:|
-| Soldier   | Melee        | High HP       | Low Damage    | Self-Healing |
-| Archer    | Ranged       | Low HP        | Medium Damage | Raw Damage   |
-| Mage      | Medium Range | Medium HP     | High Damage   | High Cost    |
-## Core Mecanics
-- The player and it's opponent each own a tower, which they have to protect
-- At the beggining of each round, the player selects which units it wants to aquire, provided they have resources to obtain them, and place them on the game board.
-    - If a unit is placed ~~adjacent to~~ on top of another of the same type, they merge and become stronger
-- After the units are positioned, the player has the option of controling each one individually, until every unit on they own has completed a set of actions:
-    - Move to another tile of the map
-        - Select a target tile within range to move to
-        - If a unit moves to a tile occupied by another of the same type, they merge and become stronger
-    - Perform an attack against another unit
-        - Select one of the available abilities, among basic attack, special attack and ultimate attack, and select the target tile
-    - Those actions can be skipped
-- If the player prefers, they will have the option of handing the control of the units to the game's algorythm, which will automatically move and attack the closest enemy
-- The same steps are then performed by the opponent, controlled by the game's engine
-- The towers can be upgraded, giving them ability to attack nearby enemy units, regenerate health, etc
-- The game loop continues until one of the towers' HP reaches zero
-## Requirements
-1. Tela inicial com opção de iniciar o jogo;
-2. Uso de animação de sprites e tiles;
-3. Algum uso de animação geral que não envolva sprites;
-4. Detecção e tratamento de colisão (via Godot ou manualmente);
-4. Presença de áudio e elementos de interface (HUD);
-6. Controle de câmera:
-A câmera não deve ser estática, mas o deslocamento da câmera pode ser contínuo ou não;
-7. Objetivo a ser alcançado:
-Pode ser completar um conjunto de fases, derrotar um conjunto de inimigos ou algum outro objetivo que dê sentido ao jogo;
-8. Tela de créditos contendo informações sobre o grupo e sobre eventuais fontes de assets utilizados.
 
-| # | Requirement | Plan |
-|:-:|:------------------------:|:-----------------------------------:|
-| 1 | Tela Inicial             | Needs fixing on positioning         |
-| 2 | Sprites animados e Tiles | Done                                |
-| 3 | Animação (não sprite)    | lerp on camera, projectiles missing |
-| 4 | Colisão                  | Done                                |
-| 5 | Áudio & HUD              | Missing some                        |
-| 6 | Câmera                   | Done                                |
-| 7 | Objetivo                 | In Progress                         |
-| 8 | Créditos                 | In Progress                         |
+# Turn-Based Tower-Defense(ish)
 
-## Credits
+## A ideia por por trás do jogo
 
-- Made by B4Hive (Bruno dos Santos Silva)
+Neste jogo baseado em turnos, o jogador controla um personagem principal ("torre") e invoca unidades secundárias usando pontos de energia para atacar seu inimigo e defender sua torre, com o objetivo de derrotar a torre do inimigo.
 
-- CHARACTER SPRITES by FreeGameAssets - CraftPix - [Link 1](https://free-game-assets.itch.io/free-tiny-hero-sprites-pixel-art), [Link 2](https://free-game-assets.itch.io/free-tiny-pixel-hero-sprites-with-melee-attacks), [Link 3](https://free-game-assets.itch.io/free-tiny-pixel-hero-sprites-with-bow-attacks)
+### Interface
 
-- UI SPRITES by Snoblin - [Link](https://snoblin.itch.io/animated-hud-pixel-rpg)
+- Cada unidade é representada com 2 elementos superiores:
+	- um representando os pondos de energia, do lado esquerdo (representação numérica);
+	- um representando os pontos de vida, do lado direito (representação visual).
 
-- TILEMAP by SnowHex - [Link](https://snowhex.itch.io/pixel-plains)
+## Funcionalidades
 
-- SOUNDS MUSIC AND FONTS - [Link](https://brackeysgames.itch.io/brackeys-platformer-bundle)
+### Energia
 
-    - SOUNDS by Brackeys, Asbjørn Thirslund
+Ao final de cada turno, a torre recebe uma quantidade de energia inversamente proporcional à quantidade de unidades invocadas, para simular um comportamento de compartilhamento de energia.
 
-    - MUSIC by Brackeys, Sofia Thirslund
+Esse comportamento não limita a quantidade de unidades invocadas, apenas a geração de energia.
 
-    - FONTS by Jayvee Enaguas - HarvettFox96 - [link](https://www.dafont.com/pixel-operator.font?l[]=10&l[]=1)
+Cada unidade recebe um ponto de energia por turno, e é mostrado na interface a porcentagem de energia em relação à quantidade de energia necessária para usarem sua habilidade.
 
-# TODO:
+### Pontos de Vida
+
+São representados como corações de cor variável, alternando entre cheios, meio-preenchidos e vazios.
+
+Um coração vazio equivale a zero pontos de vida, um coração vermelho completo equivale a dois pontos de vida, um coração prateado completo equivale a quatro pontos de vida e um coração dourado completo equivale a 6 pontos de vida. Os corações preenchidos pela metade representam os estados intermediarios, sendo vermelho equivalente a 1, prateado equivalente a 3 e dourado equivalente a 5.
+
+### Dano
+
+Cada unidade invocada possui dois tipos de ataque:
+
+- Ataque básico:
+	- utilizado em todos os momentos em que a energia estiver abaixo de 100%;
+	- possui valor de um ponto de dano;
+- Habilidade:
+	- utilizado automaticamente quando um ataque é desferido enquanto a unidade possui 100% de energia;
+	- consome a energia da unidade ao ser utilizado;
+	- possui efeitos extras;
+
+### Câmera
+
+A câmera focaliza na unidade sendo controlada no momento, e pode ser controlada manualmente com o uso da tecla Shift acompanhada das teclas direcionais.
+
+### Controles
+
+- Teclas direcionais: Seleção de direção durante a fase de movimentação das unidades;
+- Enter: encerra a fase atual do turno;
+- Esc: retorna para a tela principal / encerra o jogo;
+- Botões 1, 2 e 3: Selecionam o tipo de unidade durante a fase de invocação;
+- Shift: enquanto pressionado, habilita o controle manual da câmera do jogo.
+
+## Tipos de Unidades:
+### Tower:
+- Imóvel;
+- Resistência a dano; (todo dano recebido é reduzido a um ponto de dano)
+- Invoca as outras unidades;
+### Sword:
+- Maior quantidade de pontos de vida iniciais;
+- Menor quantidade de pontos de dano;
+- Habilidade recupera pontos de vida;
+### Bow:
+- Menor quantidade de pontos de vida iniciais;
+- Quantidade média de pontos de dano;
+- Habilidade possui o menor custo;
+### Mage:
+- Quantidade média de pontos de vida;
+- Maior quantidade de pontos de dano;
+- Habilidade aumenta de custo a cada uso e o dano aumenta proporcionalmente;
+
+## Game-Loop
+
+### Jogo
+- Cada jogador começa o jogo possuindo uma torre, com uma quantidade determinada de energia inicial;
+- O jogo alterna as ações de cada jogador, dando a cada um um turno de controle, até o fim do jogo.
+
+### Turno
+Os turnos são separados em 2 fases: Invocação e Movimentação
+- Invocação:
+A primeira fase do turno, onde o jogador seleciona o tipo de unidade que deseja invocar. Cada tipo de unidade possui mecânicas diferentes e custos de energia diferentes.
+- Movimentação:
+Após encerrar a fase de invocação, é realizado o controle de cada uma das unidades invocadas, selecionando uma direção de ação.
+	- Caso haja uma unidade inimiga na direção escolhida, dentro do limite de alcance da unidade, a mesma é atacada.
+	- Caso contrário a unidade se move na direção escolhida.
+- Após o turno de movimentação, a energia a ser gerada para a torre e as unidades é contabilizada.
+
+## Creditos:
+
+- Código fonte, Projeto Godot, Planejamento, Conceito, Testes, Implementação:
+	- Bruno dos Santos Silva ([B4Hive](https://github.com/B4Hive))
+
+- Sprites de personagens:
+	- FreeGameAssets - CraftPix - [Link 1](https://free-game-assets.itch.io/free-tiny-hero-sprites-pixel-art), [Link 2](https://free-game-assets.itch.io/free-tiny-pixel-hero-sprites-with-melee-attacks), [Link 3](https://free-game-assets.itch.io/free-tiny-pixel-hero-sprites-with-bow-attacks)
+
+- Sprites de interface de usuário:
+	- Snoblin - [Link](https://snoblin.itch.io/animated-hud-pixel-rpg)
+
+- Sprites de TileMap:
+	- SnowHex - [Link](https://snowhex.itch.io/pixel-plains)
+
+- Música, Efeitos Sonoros e Fonte:
+	- SOUNDS MUSIC AND FONTS - [Link](https://brackeysgames.itch.io/brackeys-platformer-bundle)
+
+		- Effeitos Sonoros: Brackeys, Asbjørn Thirslund
+
+		- Musica: Brackeys, Sofia Thirslund
+
+		- Fonte: Jayvee Enaguas - HarvettFox96 - [link](https://www.dafont.com/pixel-operator.font?l[]=10&l[]=1)
+
+## TODO:
 - Missing projectiles
+	- Didn't had time to add them...
 - Missing more sound effects and more music
+    - Missing combat music and more sound effects for things like walking and other stuff...
 - Missing help
+	- I wanted to add a help screen, couldn't make it in time...
