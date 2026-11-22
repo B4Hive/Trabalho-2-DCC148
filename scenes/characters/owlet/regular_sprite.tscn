@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://hy54j6am88ya"]
 
-[ext_resource type="Texture2D" uid="uid://bij1hwifnvawu" path="res://assets/characters/final/owlet/regular/Owlet_Monster_Attack1_4.png" id="1_2qpgf"]
-[ext_resource type="Texture2D" uid="uid://dpf2tbusve8rb" path="res://assets/characters/final/owlet/regular/Owlet_Monster_Death_8.png" id="2_kx1cy"]
-[ext_resource type="Texture2D" uid="uid://oieov36tm1pr" path="res://assets/characters/final/owlet/regular/Owlet_Monster_Hurt_4.png" id="3_232gn"]
-[ext_resource type="Texture2D" uid="uid://bdipqhwostnq" path="res://assets/characters/final/owlet/regular/Owlet_Monster_Idle_4.png" id="4_hkhbw"]
-[ext_resource type="Texture2D" uid="uid://bdcrgj8vgclcs" path="res://assets/characters/final/owlet/regular/Owlet_Monster_Run_6.png" id="5_37tb0"]
-[ext_resource type="Texture2D" uid="uid://swd8w6reha6q" path="res://assets/characters/final/owlet/regular/Owlet_Monster_Throw_4.png" id="6_x4o4r"]
-[ext_resource type="Texture2D" uid="uid://g6bqu245iwb5" path="res://assets/characters/final/owlet/regular/Owlet_Monster_Walk_6.png" id="7_qjkp7"]
+[ext_resource type="Texture2D" uid="uid://bij1hwifnvawu" path="res://assets/characters/owlet/regular/Owlet_Monster_Attack1_4.png" id="1_2qpgf"]
+[ext_resource type="Texture2D" uid="uid://dpf2tbusve8rb" path="res://assets/characters/owlet/regular/Owlet_Monster_Death_8.png" id="2_kx1cy"]
+[ext_resource type="Texture2D" uid="uid://oieov36tm1pr" path="res://assets/characters/owlet/regular/Owlet_Monster_Hurt_4.png" id="3_232gn"]
+[ext_resource type="Texture2D" uid="uid://bdipqhwostnq" path="res://assets/characters/owlet/regular/Owlet_Monster_Idle_4.png" id="4_hkhbw"]
+[ext_resource type="Texture2D" uid="uid://bdcrgj8vgclcs" path="res://assets/characters/owlet/regular/Owlet_Monster_Run_6.png" id="5_37tb0"]
+[ext_resource type="Texture2D" uid="uid://swd8w6reha6q" path="res://assets/characters/owlet/regular/Owlet_Monster_Throw_4.png" id="6_x4o4r"]
+[ext_resource type="Texture2D" uid="uid://g6bqu245iwb5" path="res://assets/characters/owlet/regular/Owlet_Monster_Walk_6.png" id="7_qjkp7"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ej2wx"]
 atlas = ExtResource("1_2qpgf")

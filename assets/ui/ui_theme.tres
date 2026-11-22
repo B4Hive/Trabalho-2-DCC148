@@ -1,7 +1,7 @@
 [gd_resource type="Theme" format=3 uid="uid://c7fl1xhqnfovr"]
 
-[ext_resource type="FontFile" uid="uid://qnd5vdicqr0t" path="res://assets/ui/Planes_ValMore.ttf" id="1_6cha6"]
+[ext_resource type="FontFile" uid="uid://b06l4wwfvbk78" path="res://assets/ui/fonts/PixelOperator8.ttf" id="1_fmcdn"]
 
 [resource]
-default_font = ExtResource("1_6cha6")
-default_font_size = 64
+default_font = ExtResource("1_fmcdn")
+default_font_size = 48

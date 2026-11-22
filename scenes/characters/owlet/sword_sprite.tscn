@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://d113kmxpacrgk"]
 
-[ext_resource type="Texture2D" uid="uid://dpwfq0pm7xsod" path="res://assets/characters/final/owlet/sword/Attack1.png" id="1_nl0f3"]
-[ext_resource type="Texture2D" uid="uid://2p2pkbeor2si" path="res://assets/characters/final/owlet/sword/Death.png" id="2_3em83"]
-[ext_resource type="Texture2D" uid="uid://miepehoepnvk" path="res://assets/characters/final/owlet/sword/Hurt.png" id="3_g65ed"]
-[ext_resource type="Texture2D" uid="uid://cj66qu8i1opcn" path="res://assets/characters/final/owlet/sword/Idle.png" id="4_ehaem"]
-[ext_resource type="Texture2D" uid="uid://o52a1b3e8elk" path="res://assets/characters/final/owlet/sword/Run.png" id="5_sc1jk"]
-[ext_resource type="Texture2D" uid="uid://bcct7aus8l62y" path="res://assets/characters/final/owlet/sword/Attack2.png" id="6_2irtq"]
-[ext_resource type="Texture2D" uid="uid://b03qpomxwlnhv" path="res://assets/characters/final/owlet/sword/Walk.png" id="7_dpk3b"]
+[ext_resource type="Texture2D" uid="uid://dpwfq0pm7xsod" path="res://assets/characters/owlet/sword/Attack1.png" id="1_nl0f3"]
+[ext_resource type="Texture2D" uid="uid://2p2pkbeor2si" path="res://assets/characters/owlet/sword/Death.png" id="2_3em83"]
+[ext_resource type="Texture2D" uid="uid://miepehoepnvk" path="res://assets/characters/owlet/sword/Hurt.png" id="3_g65ed"]
+[ext_resource type="Texture2D" uid="uid://cj66qu8i1opcn" path="res://assets/characters/owlet/sword/Idle.png" id="4_ehaem"]
+[ext_resource type="Texture2D" uid="uid://o52a1b3e8elk" path="res://assets/characters/owlet/sword/Run.png" id="5_sc1jk"]
+[ext_resource type="Texture2D" uid="uid://bcct7aus8l62y" path="res://assets/characters/owlet/sword/Attack2.png" id="6_2irtq"]
+[ext_resource type="Texture2D" uid="uid://b03qpomxwlnhv" path="res://assets/characters/owlet/sword/Walk.png" id="7_dpk3b"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8lykf"]
 atlas = ExtResource("1_nl0f3")

@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://ipu34jtpjk7b"]
 
-[ext_resource type="AudioStream" uid="uid://c5mlgd8ua757c" path="res://assets/temp/brackeys_platformer_assets/music/time_for_adventure.mp3" id="1_m6ggh"]
-[ext_resource type="AudioStream" uid="uid://c1gjwk5e762vj" path="res://assets/temp/brackeys_platformer_assets/sounds/hurt.wav" id="2_aoitu"]
-[ext_resource type="AudioStream" uid="uid://c3o8gi578jrbc" path="res://assets/temp/brackeys_platformer_assets/sounds/power_up.wav" id="3_njtn3"]
-[ext_resource type="AudioStream" uid="uid://c7430ywklje5b" path="res://assets/temp/brackeys_platformer_assets/sounds/tap.wav" id="4_kq7b2"]
-[ext_resource type="AudioStream" uid="uid://wcc3iqte1na2" path="res://assets/temp/brackeys_platformer_assets/sounds/explosion.wav" id="5_aoitu"]
+[ext_resource type="AudioStream" uid="uid://c5mlgd8ua757c" path="res://assets/ui/audio/time_for_adventure.mp3" id="1_m6ggh"]
+[ext_resource type="AudioStream" uid="uid://c1gjwk5e762vj" path="res://assets/ui/audio/hurt.wav" id="2_aoitu"]
+[ext_resource type="AudioStream" uid="uid://c3o8gi578jrbc" path="res://assets/ui/audio/power_up.wav" id="3_njtn3"]
+[ext_resource type="AudioStream" uid="uid://c7430ywklje5b" path="res://assets/ui/audio/tap.wav" id="4_kq7b2"]
+[ext_resource type="AudioStream" uid="uid://wcc3iqte1na2" path="res://assets/ui/audio/explosion.wav" id="5_aoitu"]
 
 [node name="AudioManager" type="Node" unique_id=1326667025]
 

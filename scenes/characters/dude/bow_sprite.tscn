@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://0hulnqgasl6"]
 
-[ext_resource type="Texture2D" uid="uid://dk2smvrn2timb" path="res://assets/characters/final/dude/bow/Attack.png" id="1_p6moj"]
-[ext_resource type="Texture2D" uid="uid://jdbsjndelvxm" path="res://assets/characters/final/dude/bow/Death.png" id="2_j5vfr"]
-[ext_resource type="Texture2D" uid="uid://byyrpwdg45mmo" path="res://assets/characters/final/dude/bow/Hurt.png" id="3_n5gxj"]
-[ext_resource type="Texture2D" uid="uid://dsoqymmv3b0m4" path="res://assets/characters/final/dude/bow/Idle.png" id="4_5uk0u"]
-[ext_resource type="Texture2D" uid="uid://bbbcen5nqu38v" path="res://assets/characters/final/dude/bow/Run.png" id="5_qn6d5"]
-[ext_resource type="Texture2D" uid="uid://c6eke8dme8aa6" path="res://assets/characters/final/dude/bow/FallAttack.png" id="6_tipq0"]
-[ext_resource type="Texture2D" uid="uid://blr8kqxsybkfe" path="res://assets/characters/final/dude/bow/Walk.png" id="7_5y8jk"]
+[ext_resource type="Texture2D" uid="uid://dk2smvrn2timb" path="res://assets/characters/dude/bow/Attack.png" id="1_p6moj"]
+[ext_resource type="Texture2D" uid="uid://jdbsjndelvxm" path="res://assets/characters/dude/bow/Death.png" id="2_j5vfr"]
+[ext_resource type="Texture2D" uid="uid://byyrpwdg45mmo" path="res://assets/characters/dude/bow/Hurt.png" id="3_n5gxj"]
+[ext_resource type="Texture2D" uid="uid://dsoqymmv3b0m4" path="res://assets/characters/dude/bow/Idle.png" id="4_5uk0u"]
+[ext_resource type="Texture2D" uid="uid://bbbcen5nqu38v" path="res://assets/characters/dude/bow/Run.png" id="5_qn6d5"]
+[ext_resource type="Texture2D" uid="uid://c6eke8dme8aa6" path="res://assets/characters/dude/bow/FallAttack.png" id="6_tipq0"]
+[ext_resource type="Texture2D" uid="uid://blr8kqxsybkfe" path="res://assets/characters/dude/bow/Walk.png" id="7_5y8jk"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xav54"]
 atlas = ExtResource("1_p6moj")

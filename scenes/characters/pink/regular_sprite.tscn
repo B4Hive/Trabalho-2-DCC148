@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://dbtu4deasun6d"]
 
-[ext_resource type="Texture2D" uid="uid://4c8qfarvdp3k" path="res://assets/characters/final/pink/regular/Pink_Monster_Attack1_4.png" id="1_hg3ms"]
-[ext_resource type="Texture2D" uid="uid://dogic3l0iag4i" path="res://assets/characters/final/pink/regular/Pink_Monster_Death_8.png" id="2_skdup"]
-[ext_resource type="Texture2D" uid="uid://cvresst443tgh" path="res://assets/characters/final/pink/regular/Pink_Monster_Hurt_4.png" id="3_c6xm6"]
-[ext_resource type="Texture2D" uid="uid://b4312blnxpryq" path="res://assets/characters/final/pink/regular/Pink_Monster_Idle_4.png" id="4_ej770"]
-[ext_resource type="Texture2D" uid="uid://b67vltgh5gh17" path="res://assets/characters/final/pink/regular/Pink_Monster_Run_6.png" id="5_nkp58"]
-[ext_resource type="Texture2D" uid="uid://c8nd3b37dl3ln" path="res://assets/characters/final/pink/regular/Pink_Monster_Throw_4.png" id="6_hpl5a"]
-[ext_resource type="Texture2D" uid="uid://mqkdaqbulijy" path="res://assets/characters/final/pink/regular/Pink_Monster_Walk_6.png" id="7_ye5bs"]
+[ext_resource type="Texture2D" uid="uid://4c8qfarvdp3k" path="res://assets/characters/pink/regular/Pink_Monster_Attack1_4.png" id="1_hg3ms"]
+[ext_resource type="Texture2D" uid="uid://dogic3l0iag4i" path="res://assets/characters/pink/regular/Pink_Monster_Death_8.png" id="2_skdup"]
+[ext_resource type="Texture2D" uid="uid://cvresst443tgh" path="res://assets/characters/pink/regular/Pink_Monster_Hurt_4.png" id="3_c6xm6"]
+[ext_resource type="Texture2D" uid="uid://b4312blnxpryq" path="res://assets/characters/pink/regular/Pink_Monster_Idle_4.png" id="4_ej770"]
+[ext_resource type="Texture2D" uid="uid://b67vltgh5gh17" path="res://assets/characters/pink/regular/Pink_Monster_Run_6.png" id="5_nkp58"]
+[ext_resource type="Texture2D" uid="uid://c8nd3b37dl3ln" path="res://assets/characters/pink/regular/Pink_Monster_Throw_4.png" id="6_hpl5a"]
+[ext_resource type="Texture2D" uid="uid://mqkdaqbulijy" path="res://assets/characters/pink/regular/Pink_Monster_Walk_6.png" id="7_ye5bs"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_guuye"]
 atlas = ExtResource("1_hg3ms")

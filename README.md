@@ -46,15 +46,24 @@ Pode ser completar um conjunto de fases, derrotar um conjunto de inimigos ou alg
 | 8 | Créditos                 | In Progress                         |
 
 ## Credits
-- Font : CraftPix
-- Character Sprites : CraftPix
-- UI Sprites: Snoblin
-- Music : 
-- Sound Effects :
-- TileMap : PixelPlains
+
+- Made by B4Hive (Bruno dos Santos Silva)
+
+- CHARACTER SPRITES by FreeGameAssets - CraftPix - [Link 1](https://free-game-assets.itch.io/free-tiny-hero-sprites-pixel-art), [Link 2](https://free-game-assets.itch.io/free-tiny-pixel-hero-sprites-with-melee-attacks), [Link 3](https://free-game-assets.itch.io/free-tiny-pixel-hero-sprites-with-bow-attacks)
+
+- UI SPRITES by Snoblin - [Link](https://snoblin.itch.io/animated-hud-pixel-rpg)
+
+- TILEMAP by SnowHex - [Link](https://snowhex.itch.io/pixel-plains)
+
+- SOUNDS MUSIC AND FONTS - [Link](https://brackeysgames.itch.io/brackeys-platformer-bundle)
+
+    - SOUNDS by Brackeys, Asbjørn Thirslund
+
+    - MUSIC by Brackeys, Sofia Thirslund
+
+    - FONTS by Jayvee Enaguas - HarvettFox96 - [link](https://www.dafont.com/pixel-operator.font?l[]=10&l[]=1)
 
 # TODO:
 - Missing projectiles
-- Missing sound effects and more music
-- Missing proper credits
+- Missing more sound effects and more music
 - Missing help

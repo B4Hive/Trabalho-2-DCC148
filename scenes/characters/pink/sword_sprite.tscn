@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://br2233v7cmhnr"]
 
-[ext_resource type="Texture2D" uid="uid://iot2f220kkv3" path="res://assets/characters/final/pink/sword/Attack1.png" id="1_jcfd5"]
-[ext_resource type="Texture2D" uid="uid://t1shn0bki75g" path="res://assets/characters/final/pink/sword/Death.png" id="2_wkvcu"]
-[ext_resource type="Texture2D" uid="uid://dwdsxcmgsksme" path="res://assets/characters/final/pink/sword/Hurt.png" id="3_782cs"]
-[ext_resource type="Texture2D" uid="uid://ca3cxtg52uomn" path="res://assets/characters/final/pink/sword/Idle.png" id="4_bftpy"]
-[ext_resource type="Texture2D" uid="uid://c57tp2s8sny1j" path="res://assets/characters/final/pink/sword/Run.png" id="5_sy8ex"]
-[ext_resource type="Texture2D" uid="uid://b1titmp63uhc2" path="res://assets/characters/final/pink/sword/Attack2.png" id="6_uc1h8"]
-[ext_resource type="Texture2D" uid="uid://ua6vgkk17cm0" path="res://assets/characters/final/pink/sword/Walk.png" id="7_nes2h"]
+[ext_resource type="Texture2D" uid="uid://iot2f220kkv3" path="res://assets/characters/pink/sword/Attack1.png" id="1_jcfd5"]
+[ext_resource type="Texture2D" uid="uid://t1shn0bki75g" path="res://assets/characters/pink/sword/Death.png" id="2_wkvcu"]
+[ext_resource type="Texture2D" uid="uid://dwdsxcmgsksme" path="res://assets/characters/pink/sword/Hurt.png" id="3_782cs"]
+[ext_resource type="Texture2D" uid="uid://ca3cxtg52uomn" path="res://assets/characters/pink/sword/Idle.png" id="4_bftpy"]
+[ext_resource type="Texture2D" uid="uid://c57tp2s8sny1j" path="res://assets/characters/pink/sword/Run.png" id="5_sy8ex"]
+[ext_resource type="Texture2D" uid="uid://b1titmp63uhc2" path="res://assets/characters/pink/sword/Attack2.png" id="6_uc1h8"]
+[ext_resource type="Texture2D" uid="uid://ua6vgkk17cm0" path="res://assets/characters/pink/sword/Walk.png" id="7_nes2h"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mxuke"]
 atlas = ExtResource("1_jcfd5")
